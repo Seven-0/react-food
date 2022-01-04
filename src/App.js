@@ -17,11 +17,11 @@ function App() {
       <Hero />
       <Products heading='Choose your favorite' />
       <Feature />
-      <Products heading='Get your favorite Pizza'/>
+      {/* <Products heading='Get your favorite Pizza'/>
       <FeatureAcha/>
       <Products heading='Enak dan Harganya Terjangkau'/>
       <FeatureAyam/>
-      <Products heading='Enak dan Harganya Terjangkau'/>
+      <Products heading='Enak dan Harganya Terjangkau'/> */}
       <Footer />
     </Router>
     

@@ -30,22 +30,25 @@ const Products = ({ heading }) => {
     <ProductsContainer>
       <ProductsHeading> {heading} </ProductsHeading>
       <ProductWrapper>
-        {payload.map((makanan, code) => {
-          return makanan.acchaIndian.map((acchaIndian, code) => {
-            return (
-              <ProductCard key={acchaIndian.code}>
-                <ProductImg src={acchaIndian.image} />
-                {console.log("lognya: ", acchaIndian.shopName)}
-                <ProductInfo>
-                  <ProductTitle> {acchaIndian.shopName} </ProductTitle>
-                  <ProductDesc> {acchaIndian.ind} </ProductDesc>
-                  <ProductPrice> {"Rp. " + acchaIndian.price} </ProductPrice>
-                  {/* <ProductButton>{makanan.button} </ProductButton> */}
-                </ProductInfo>
-              </ProductCard>
-            );
-          });
+        {payload.map((makanan) => {
+          return (
+            <div>
+              {makanan.menus.map(menu => (
+                <ProductCard key={menu.code}>
+                  <ProductImg src={menu.image} />
+                  {console.log("lognya: ", menu.shopName)}
+                  <ProductInfo>
+                    <ProductTitle> {menu.shopName} </ProductTitle>
+                    <ProductDesc> {menu.ind} </ProductDesc>
+                    <ProductPrice> {"Rp. " + menu.price} </ProductPrice>
+                    {/* <ProductButton>{makanan.button} </ProductButton> */}
+                  </ProductInfo>
+                </ProductCard>
+              ))}
+            </div>
+          );
         })}
+        ;
       </ProductWrapper>
     </ProductsContainer>
   );

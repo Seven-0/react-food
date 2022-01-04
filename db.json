@@ -4,7 +4,7 @@
          "code":1,
          "shopName":"Accha Indian Soul Food",
          "address":"Jl. Bangka Raya Jl. Kemang Raya No.106, RT.1/RW.12, Pela Mampang, Kec. Mampang Prpt.",
-         "acchaIndian":[
+         "menus":[
             {
                "code":101,
                "title":"Chicken Tikka Masala Rice Bowl",
@@ -102,7 +102,7 @@
          "code":2,
          "shopName":"Ayam Gepuk Pak Gembus",
          "address":"Jl. Benda Raya No.8D, Benda Baru, Kec. Pamulang, Kota Tangerang Selatan.",
-         "ayamPakGembus":[
+         "menus":[
             {
                "code":201,
                "title":"Gempi Jumbo",
@@ -200,7 +200,7 @@
          "code":3,
          "shopName":"Chatime",
          "address":"Kuningan City Lt. LG Blok FE No.72, Jl. Prof. Dr. Satrio Kav. 18, Setiabudi.",
-         "chatime":[
+         "menus":[
             {
                "code":301,
                "title":"Purple Star Tea",
@@ -298,7 +298,7 @@
          "code":4,
          "shopName":"Eatlah",
          "address":"Jl. M.H. Thamrin No.28-30, RT.9/RW.5, Gondangdia, Kec. Menteng, Kota Jakarta Pusat.",
-         "eatlah":[
+         "menus":[
             {
                "code":401,
                "title":"Setlah of the Month",
@@ -342,7 +342,7 @@
                "eng":"1 Eat kiddo size chicken rice + 1 chocolate milk (190ml)",
                "price":43500,
                "discPrice":0,
-               "image":"image/5-setlah-kiddo-dory.jpg"
+               "image":"image/5-setlah-kiddo-chicken.jpg"
             },
             {
                "code":406,
@@ -378,7 +378,7 @@
          "code":5,
          "shopName":"Haus",
          "address":"Jl. Raya Tengah No.33, RT.1/RW.9, Kp. Tengah, Kec. Kramat jati, Kota Jakarta Timur.",
-         "haus":[
+         "menus":[
             {
                "code":501,
                "title":"Choco Lava Milo",
@@ -476,7 +476,7 @@
          "code":6,
          "shopName":"KFC",
          "address":"Jl. M.I. Ridwan Rais No.7b, RW.2, Gambir, Kecamatan Gambir, Kota Jakarta Pusat.",
-         "kfc":[
+         "menus":[
             {
                "code":601,
                "title":"Winger Bucket",
@@ -574,7 +574,7 @@
          "code":7,
          "shopName":"Martabak Orins",
          "address":"Jl. Wijaya I No.30, RT.1/RW.2, Petogogan, Kec. Kby. Baru, Kota Jakarta Selatan.",
-         "martabakOrins":[
+         "menus":[
             {
                "code":701,
                "title":"BPJS 1 - Pucuk",
@@ -672,7 +672,7 @@
          "code":8,
          "shopName":"McDonald's",
          "address":"Jl. Tebet Barat Dalam I No.13, RT.13/RW.2, Tebet Bar., Kec. Tebet, Kota Jakarta Selatan.",
-         "mcd":[
+         "menus":[
             {
                "code":801,
                "title":"PaHeBat Chicken Burger Deluxe, Large",
@@ -770,7 +770,7 @@
          "code":9,
          "shopName":"Mynum",
          "address":"Jl. M. Kahfi 1 Blok Haji Idris No.10, RT.4/RW.2, Cipedak, Jagakarsa, Kota Jakarta Selatan.",
-         "mynum":[
+         "menus":[
             {
                "code":901,
                "title":"Black Cookies Oreo",
@@ -868,7 +868,7 @@
          "code":10,
          "shopName":"Pizza Hut",
          "address":" Jl. Siliwangi No.9, Pamulang Bar., Kec. Pamulang, Kota Tangerang Selatan.",
-         "pizzaHut":[
+         "menus":[
             {
                "code":1001,
                "title":"L1MO Pizza",
