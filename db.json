@@ -1,0 +1,966 @@
+{
+   "shop":[
+      {
+         "code":1,
+         "shopName":"Accha Indian Soul Food",
+         "address":"Jl. Bangka Raya Jl. Kemang Raya No.106, RT.1/RW.12, Pela Mampang, Kec. Mampang Prpt.",
+         "acchaIndian":[
+            {
+               "code":101,
+               "title":"Chicken Tikka Masala Rice Bowl",
+               "ind":"Potongan ayam yang dimasak dengan bumbu kari spesial dan aromatik disajikan dengan nasi putih. (Gratis 1 Sambal)",
+               "eng":"Chunks of chicken cooked in a special curry and aromatic spices served with white rice. (Complimentary 1 Sambal)",
+               "price":39900,
+               "discPrice":50000,
+               "image":"image/1-chicken-tikka-masala.jpg"
+            },
+            {
+               "code":102,
+               "title":"Butter Chicken Kofta Rice Bowl",
+               "ind":"Kofta ayam (bakso) yang dibumbui dengan sempurna dimasak dengan mentega lembut dan kari tomat yang lembut disajikan dengan nasi",
+               "eng":"Perfectly seasoned chicken kofta (meatballs) cooked in a smooth buttery and creamy tomato curry served with rice",
+               "price":37900,
+               "discPrice":48000,
+               "image":"image/2-butter-chicken-kofta.jpg"
+            },
+            {
+               "code":103,
+               "title":"Chicken Kofta Masala Rice Bowl",
+               "ind":"ayam kofta (bakso) dalam bumbu kari spesial yang disajikan di atas nasi putih. (Gratis 1 Sambal)",
+               "eng":"chicken kofta (meatballs) in a special spiced curry served on a bed of white rice. (Complimentary 1 Sambal)",
+               "price":37900,
+               "discPrice":48000,
+               "image":"image/3-chicken-kofta-masala.jpg"
+            },
+            {
+               "code":104,
+               "title":"Butter Chicken Rice Bowl",
+               "ind":"Potongan ayam yang dimasak dengan kari tomat yang lembut dan lembut disajikan dengan nasi putih. (Gratis 1 Sambal)",
+               "eng":"Chunks of chicken cooked in a smooth buttery and creamy tomato curry served with white rice. (Complimentary 1 Sambal)",
+               "price":39900,
+               "discPrice":50000,
+               "image":"image/4-butter-chicken.jpg"
+            },
+            {
+               "code":105,
+               "title":"Lamb Curry Rice Bowl",
+               "ind":"Potongan daging domba yang direbus dalam kari spesial kami dan bumbu aromatik disajikan dengan nasi putih. (Gratis 1 Sambal)",
+               "eng":"Chunks of lamb simmered in our special curry and aromatic spice served with white rice. (Complimentary 1 Sambal)",
+               "price":49900,
+               "discPrice":60000,
+               "image":"image/5-lamb-curry.jpg"
+            },
+            {
+               "code":106,
+               "title":"Saag (Spinach) Chicken Rice Bowl",
+               "ind":"Potongan ayam yang dimasak dengan kari bayam spesial dan bumbu aromatik disajikan dengan nasi putih. (Gratis 1 Sambal)",
+               "eng":"Chunks of chicken cooked in a special spinach curry and aromatic spices served with white rice. (Complimentary 1 Sambal)",
+               "price":39900,
+               "discPrice":50000,
+               "image":"image/6-saag-chicken.jpg"
+            },
+            {
+               "code":107,
+               "title":"Chicken Munch-U! Rice Bowl",
+               "ind":"Accha mengambil hidangan manchuria klasik (India-Cina) kultus. Ayam yang dimarinasi dengan saus manis, pedas dan tajam disajikan dengan nasi putih. (Gratis 1 Sambal)",
+               "eng":"Accha's take on the cult classic (Indian-Chinese) manchurian dish. Marinated chicken tossed in  sweet, spicy and tangy sauce served with white rice. (Complimentary 1 Sambal)",
+               "price":39900,
+               "discPrice":50000,
+               "image":"image/7-chicken-munch-u.jpg"
+            },
+            {
+               "code":108,
+               "title":"Saag (Spinach) Paneer Rice Bowl",
+               "ind":"Potongan paneer (keju cottage) yang kaya dan lembut dalam kari bayam spesial yang disajikan dengan nasi putih. (Gratis 1 Sambal)",
+               "eng":"A rich and creamy chunks of paneer (cottage cheese) in a special spinach currry served with white rice. (Complimentary 1 Sambal)",
+               "price":47900,
+               "discPrice":60000,
+               "image":"image/8-saag-paneer.jpg"
+            },
+            {
+               "code":109,
+               "title":"Yellow Daal Rice Bowl (Vegan)",
+               "ind":"Semangkuk lentil yang dikemas dengan protein dimasak dengan bumbu untuk hidangan lezat yang disajikan dengan nasi putih. (Gratis 1 Sambal)",
+               "eng":"A bowl of protein packed lentils cooked in spices for a hearty dish served with white rice. (Complimentary 1 Sambal)",
+               "price":35900,
+               "discPrice":45000,
+               "image":"image/9-yellow-daal-vegan.jpg"
+            },
+            {
+               "code":110,
+               "title":"Channa Masala Rice Bowl (Vegan)",
+               "ind":"Kari India yang lezat & beraroma dibuat dengan buncis yang diisi dengan saus masala bawang dan tomat disajikan dengan nasi putih. (Gratis 1 Sambal)",
+               "eng":"A delicious & flavorful Indian curry made with loaded chickpeas in an onion and tomato masala gravy served with white rice. (Complimentary 1 Sambal)",
+               "price":35900,
+               "discPrice":45000,
+               "image":"image/10-channa-masala-vegan.jpg"
+            }
+         ],
+         "image":"image/logo-accha-indian-soul-food.jpg"
+      },
+      {
+         "code":2,
+         "shopName":"Ayam Gepuk Pak Gembus",
+         "address":"Jl. Benda Raya No.8D, Benda Baru, Kec. Pamulang, Kota Tangerang Selatan.",
+         "ayamPakGembus":[
+            {
+               "code":201,
+               "title":"Gempi Jumbo",
+               "ind":"Nasi+Sambal+Ayam Crispy Besar+Nestea",
+               "eng":"Rice + Sambal + Big Crispy Chicken + Nestea",
+               "price":31500,
+               "discPrice":35000,
+               "image":"image/1-gempi-jumbo.jpg"
+            },
+            {
+               "code":202,
+               "title":"Gempi Wings",
+               "ind":"Nasi+Sambal+2 Sayap Ayam Crispy+Nestea",
+               "eng":"Rice+Sambal+2 Crispy Chicken Wings+Nestea",
+               "price":37000,
+               "discPrice":43000,
+               "image":"image/2-gempi-wings.jpg"
+            },
+            {
+               "code":203,
+               "title":"Gempi Ekonomis",
+               "ind":"Nasi+Sambal+Paha Bawah/Sayap Crispy+Nestea",
+               "eng":"Rice+Sambal+Thighs/Crispy Wings+Nestea",
+               "price":25000,
+               "discPrice":28000,
+               "image":"image/3-gempi-ekonomis.jpg"
+            },
+            {
+               "code":204,
+               "title":"Ori 1",
+               "ind":"Nasi+Ayam Original+Sambal+Nestea",
+               "eng":"Rice + Original Chicken + Sambal + Nestea",
+               "price":32500,
+               "discPrice":35000,
+               "image":"image/4-ori-1.jpg"
+            },
+            {
+               "code":205,
+               "title":"Ori 2",
+               "ind":"Nasi+Ayam Original+Sambal+Sate+Nestea",
+               "eng":"Rice+Original Chicken+Sambal+Sate+Nestea",
+               "price":36500,
+               "discPrice":39000,
+               "image":"image/5-ori-2.jpg"
+            },
+            {
+               "code":206,
+               "title":"Ori 3",
+               "ind":"Nasi+Ayam Original+Sambal+Tahu/Tempe+Nestea",
+               "eng":"Rice+Original Chicken+Sambal+Tofu/Tempe+Nestea",
+               "price":34000,
+               "discPrice":37000,
+               "image":"image/6-ori-3.jpg"
+            },
+            {
+               "code":207,
+               "title":"Ori Kombo",
+               "ind":"Nasi+Ayam Original+Sambal+Tahu+Tempe+Sate+Nestea",
+               "eng":"Rice+Original Chicken+Sambal+Tofu+Tempe+Sate+Nestea",
+               "price":42000,
+               "discPrice":47000,
+               "image":"image/7-ori-kombo.jpg"
+            },
+            {
+               "code":208,
+               "title":"Nestea Lemon Tea",
+               "ind":"",
+               "eng":"",
+               "price":7000,
+               "discPrice":0,
+               "image":"image/8-neste-lemon-tea.jpg"
+            },
+            {
+               "code":209,
+               "title":"Teh Manis",
+               "ind":"",
+               "eng":"",
+               "price":6000,
+               "discPrice":0,
+               "image":"image/9-teh-manis.jpg"
+            },
+            {
+               "code":210,
+               "title":"Air Mineral 600 Ml",
+               "ind":"",
+               "eng":"",
+               "price":6000,
+               "discPrice":0,
+               "image":"image/10-air-mineral-600-ml.jpg"
+            }
+         ],
+         "image":"image/logo-ayam-pak-gebus.png"
+      },
+      {
+         "code":3,
+         "shopName":"Chatime",
+         "address":"Kuningan City Lt. LG Blok FE No.72, Jl. Prof. Dr. Satrio Kav. 18, Setiabudi.",
+         "chatime":[
+            {
+               "code":301,
+               "title":"Purple Star Tea",
+               "ind":"LIMITED BT21 EDITION! Perpaduan Segarnya Green Tea Rasa Buah Anggur Dengan Grape Jelly",
+               "eng":"LIMITED BT21 EDITION! Fresh Blend of Green Tea with Grape Flavor with Grape Jelly",
+               "price":32000,
+               "discPrice":0,
+               "image":"image/1-purple-star-tea.jpg"
+            },
+            {
+               "code":302,
+               "title":"Purple Star Milk Tea",
+               "ind":"LIMITED BT21 EDITION! Perpaduan Signature Milk Tea Rasa Buah Anggur Dengan Grape Jelly",
+               "eng":"LIMITED BT21 EDITION! Combination of Signature Milk Tea with Grape Flavor with Grape Jelly",
+               "price":35000,
+               "discPrice":0,
+               "image":"image/2-purple-star-milk-tea.jpg"
+            },
+            {
+               "code":303,
+               "title":"Mango Smoothie",
+               "ind":"",
+               "eng":"",
+               "price":24000,
+               "discPrice":26000,
+               "image":"image/3-mango-smoothie.jpg"
+            },
+            {
+               "code":304,
+               "title":"Strawberry Smoothie",
+               "ind":"",
+               "eng":"",
+               "price":24000,
+               "discPrice":30000,
+               "image":"image/4-strawberry-smoothie.jpg"
+            },
+            {
+               "code":305,
+               "title":"Matcha Red Bean Smoothie",
+               "ind":"",
+               "eng":"",
+               "price":27000,
+               "discPrice":0,
+               "image":"image/5-matcha-red-bean-smoothie.jpg"
+            },
+            {
+               "code":306,
+               "title":"Espresso Smoothie",
+               "ind":"",
+               "eng":"",
+               "price":27000,
+               "discPrice":32000,
+               "image":"image/6-espresso-smoothie.jpg"
+            },
+            {
+               "code":307,
+               "title":"BT21 & Purple Tea",
+               "ind":"LIMITED BT21 EDITION! Hadir dengan 8 karakter BT21 (Random, Tidak bisa pilih)",
+               "eng":"LIMITED BT21 EDITION! Comes with 8 BT21 characters (Random, Can't choose)",
+               "price":42000,
+               "discPrice":47000,
+               "image":"image/7-bt21-purple-tea.jpg"
+            },
+            {
+               "code":308,
+               "title":"BT21 & Milk Tea",
+               "ind":"LIMITED BT21 EDITION! Hadir dengan 8 karakter BT21 (Random, Tidak bisa pilih)",
+               "eng":"LIMITED BT21 EDITION! Comes with 8 BT21 characters (Random, Can't choose)",
+               "price":45000,
+               "discPrice":55000,
+               "image":"image/8-bt21-milk-tea.jpg"
+            },
+            {
+               "code":309,
+               "title":"Dalgonana Choco",
+               "ind":"Delightful Banana Drinks inspired by Minions: Perpaduan minuman rasa cokelat ala Chatime dengan susu dan krim pisang yang creamy",
+               "eng":"Delightful Banana Drinks inspired by Minions: A blend of Chatime-style chocolate-flavored drinks with creamy banana milk and cream",
+               "price":32000,
+               "discPrice":0,
+               "image":"image/9-dalgonana-choco.jpg"
+            },
+            {
+               "code":310,
+               "title":"Dalgonana Milk Tea",
+               "ind":"Delightful Banana Drinks inspired by Minions:  Perpaduan Chatime Milk Tea dengan susu dan krim pisang yang creamy",
+               "eng":"Delightful Banana Drinks inspired by Minions: A blend of Chatime Milk Tea with creamy banana milk and cream",
+               "price":32000,
+               "discPrice":0,
+               "image":"image/10-dalgonana-milk-tea.jpg"
+            }
+         ],
+         "image":"image/logo-chatime.png"
+      },
+      {
+         "code":4,
+         "shopName":"Eatlah",
+         "address":"Jl. M.H. Thamrin No.28-30, RT.9/RW.5, Gondangdia, Kec. Menteng, Kota Jakarta Pusat.",
+         "eatlah":[
+            {
+               "code":401,
+               "title":"Setlah of the Month",
+               "ind":"1 Eatlah ukuran biasa + 1 Iced Choco Malt (Cup)",
+               "eng":"1 Eat regular size + 1 Iced Choco Malt (Cup)",
+               "price":55000,
+               "discPrice":75000,
+               "image":"image/1-setlah-of-the-month.jpg"
+            },
+            {
+               "code":402,
+               "title":"Party Setlah",
+               "ind":"3 Drinklah + 6 pcs Croffle asli",
+               "eng":"3 Drinks + 6 pcs real Croffle",
+               "price":100000,
+               "discPrice":130000,
+               "image":"image/2-party-setlah.jpeg"
+            },
+            {
+               "code":403,
+               "title":"Full Setlah",
+               "ind":"1 nasi ayam ukuran biasa + 1 minuman + 1 bungkus kopi asli",
+               "eng":"1 regular size chicken rice + 1 drink + 1 packet of real coffee",
+               "price":65000,
+               "discPrice":0,
+               "image":"image/3-full-setlah.jpeg"
+            },
+            {
+               "code":404,
+               "title":"Dessert Setlah",
+               "ind":"1Drinklah + 1 pcs Croffle asli",
+               "eng":"1Drinklah + 1 pcs original Croffle",
+               "price":28000,
+               "discPrice":0,
+               "image":"image/4-dessert-setlah.jpeg"
+            },
+            {
+               "code":405,
+               "title":"Setlah Kiddo Dory",
+               "ind":"1 Eatlah chicken rice ukuran kiddo + 1 susu coklat (190ml)",
+               "eng":"1 Eat kiddo size chicken rice + 1 chocolate milk (190ml)",
+               "price":43500,
+               "discPrice":0,
+               "image":"image/5-setlah-kiddo-dory.jpg"
+            },
+            {
+               "code":406,
+               "title":"Setlah Kiddo Chicken",
+               "ind":"1 Eatlah chicken rice ukuran kiddo + 1 susu coklat (190ml)",
+               "eng":"1 Eat kiddo size chicken rice + 1 chocolate milk (190ml)",
+               "price":40000,
+               "discPrice":0,
+               "image":"image/6-setlah-kiddo-dory.jpg"
+            },
+            {
+               "code":407,
+               "title":"Setlah Dory Rice",
+               "ind":"dengan drinklah cup",
+               "eng":"with drinklah cup",
+               "price":60000,
+               "discPrice":0,
+               "image":"image/7-setlah-dory-rice.jpg"
+            },
+            {
+               "code":408,
+               "title":"Setlah Chiken Rice",
+               "ind":"dengan drinklah cup",
+               "eng":"with drinklah cup",
+               "price":55000,
+               "discPrice":0,
+               "image":"image/8-setlah-chicken-rice.jpg"
+            }
+         ],
+         "image":"image/logo-eatlah.jpg"
+      },
+      {
+         "code":5,
+         "shopName":"Haus",
+         "address":"Jl. Raya Tengah No.33, RT.1/RW.9, Kp. Tengah, Kec. Kramat jati, Kota Jakarta Timur.",
+         "haus":[
+            {
+               "code":501,
+               "title":"Choco Lava Milo",
+               "ind":"",
+               "eng":"",
+               "price":15500,
+               "discPrice":0,
+               "image":"image/1-choco-lava-milo.jpg"
+            },
+            {
+               "code":502,
+               "title":"Choco Hazelnut",
+               "ind":"",
+               "eng":"",
+               "price":15500,
+               "discPrice":0,
+               "image":"image/2-choco-hazelnut.jpg"
+            },
+            {
+               "code":503,
+               "title":"Choco Avocado",
+               "ind":"",
+               "eng":"",
+               "price":17001,
+               "discPrice":0,
+               "image":"image/3-choco-avocado.jpg"
+            },
+            {
+               "code":504,
+               "title":"Kyoto Matcha Latte",
+               "ind":"",
+               "eng":"",
+               "price":20500,
+               "discPrice":0,
+               "image":"image/4-kyoto-matcha-late.jpg"
+            },
+            {
+               "code":505,
+               "title":"Kyoto Matcha Latte",
+               "ind":"",
+               "eng":"",
+               "price":18000,
+               "discPrice":0,
+               "image":"image/5-tokyo-banana-choco.jpg"
+            },
+            {
+               "code":506,
+               "title":"Osaka Orange Yakult",
+               "ind":"",
+               "eng":"",
+               "price":19500,
+               "discPrice":0,
+               "image":"image/6-osaka-orange-yakult.jpg"
+            },
+            {
+               "code":507,
+               "title":"Strawberry Tea",
+               "ind":"",
+               "eng":"",
+               "price":11000,
+               "discPrice":0,
+               "image":"image/7-strawberry-tea.jpg"
+            },
+            {
+               "code":508,
+               "title":"Mango Tea",
+               "ind":"",
+               "eng":"",
+               "price":11000,
+               "discPrice":0,
+               "image":"image/8-mango-tea.jpg"
+            },
+            {
+               "code":509,
+               "title":"Black Jasmine Tea",
+               "ind":"",
+               "eng":"",
+               "price":6001,
+               "discPrice":0,
+               "image":"image/9-black-jasmine-tea.jpg"
+            },
+            {
+               "code":510,
+               "title":"Roti Bakar Coklat Keju",
+               "ind":"",
+               "eng":"",
+               "price":34000,
+               "discPrice":36000,
+               "image":"image/10-roti-bakar-coklat-keju.jpg"
+            }
+         ],
+         "image":"image/logo-haus.png"
+      },
+      {
+         "code":6,
+         "shopName":"KFC",
+         "address":"Jl. M.I. Ridwan Rais No.7b, RW.2, Gambir, Kecamatan Gambir, Kota Jakarta Pusat.",
+         "kfc":[
+            {
+               "code":601,
+               "title":"Winger Bucket",
+               "ind":"7 Porsi Setengah Sayap",
+               "eng":"7 Half Wings",
+               "price":84000,
+               "discPrice":90000,
+               "image":"image/1-winger-bucket.jpg"
+            },
+            {
+               "code":602,
+               "title":"9Pcs Chicken",
+               "ind":"9 Pcs Ayam",
+               "eng":"9 Pcs Chicken",
+               "price":161500,
+               "discPrice":180000,
+               "image":"image/2-9pcs-chicken.jpg"
+            },
+            {
+               "code":603,
+               "title":"Snack Bucket 1",
+               "ind":"4 pcs Potongan Ayam + 1 Kentang + 1 KFC Winger + 6 Bola Ayam",
+               "eng":"4 pcs Chicken Strip + 1 Fun Fries + 1 KFC Winger + 6 Chicken Ball",
+               "price":83001,
+               "discPrice":90000,
+               "image":"image/3-snack-bucket-1.jpg"
+            },
+            {
+               "code":604,
+               "title":"Snack Bucket 2",
+               "ind":"4 pcs Potongan Ayam + 1 Kentang + 1 KFC Winger + 6 Bola Ayam",
+               "eng":"4 pcs Chicken Strip + 1 Fun Fries + 1 KFC Winger + 6 Chicken Ball",
+               "price":70500,
+               "discPrice":83000,
+               "image":"image/4-snack-bucket-2.jpg"
+            },
+            {
+               "code":605,
+               "title":"Personal Snack Bucket 1",
+               "ind":"1 Kentang reg + 1 pcs Potongan Ayam",
+               "eng":"1 French Fries reg + 1 pcs Chicken Strip",
+               "price":21000,
+               "discPrice":25000,
+               "image":"image/5-personal-bucket-1.jpg"
+            },
+            {
+               "code":606,
+               "title":"Personal Snack Bucket 2",
+               "ind":"1 Kentang reg + 3 pcs Bola Ayam",
+               "eng":"1 French Fries reg + 3Pcs Chicken Ball",
+               "price":21000,
+               "discPrice":25000,
+               "image":"image/6-personal-bucket-2.jpg"
+            },
+            {
+               "code":607,
+               "title":"Personal Snack Bucket 2",
+               "ind":"1 Kentang reg + Setengan Bagian Sayap",
+               "eng":"1 French Fries reg + Half Winger",
+               "price":21000,
+               "discPrice":25000,
+               "image":"image/7-personal-bucket-3.jpg"
+            },
+            {
+               "code":608,
+               "title":"Kombo Super Star 1",
+               "ind":"2 Ayam+ 2 Nasi + 1 Ichi Ocha + 1 Coca-Cola + 1 Fun Fries BBQ  +  1 CD",
+               "eng":"2 Chicken+ 2 Rice + 1 Ichi Ocha + 1 Coca-Cola + 1 Fun Fries BBQ  +  1 CD",
+               "price":51500,
+               "discPrice":54000,
+               "image":"image/8-kombo-super-star-1.jpg"
+            },
+            {
+               "code":609,
+               "title":"Kombo Super Star 2",
+               "ind":"3 pcs Ayam + 2 Rice + 2 Coca-Cola reg. + 2 Menu Goceng +  1 CD",
+               "eng":"3 pcs Chicken + 2 Rice + 2 Coca-Cola reg. + 2 Menu Goceng +  1 CD",
+               "price":63000,
+               "discPrice":67000,
+               "image":"image/9-kombo-super-star-2.jpg"
+            },
+            {
+               "code":610,
+               "title":"Kombo Super Star 3",
+               "ind":"4 pcs Ayam + 2 Sup + 2 Perkedel + 1 CD",
+               "eng":"4 pcs Chicken + 2 Soup + 2 Perkedel + 1 CD",
+               "price":77000,
+               "discPrice":80000,
+               "image":"image/10-kombo-super-star-3.jpg"
+            }
+         ],
+         "image":"image/logo-kfc.jpg"
+      },
+      {
+         "code":7,
+         "shopName":"Martabak Orins",
+         "address":"Jl. Wijaya I No.30, RT.1/RW.2, Petogogan, Kec. Kby. Baru, Kota Jakarta Selatan.",
+         "martabakOrins":[
+            {
+               "code":701,
+               "title":"BPJS 1 - Pucuk",
+               "ind":"Harga Offline Rp91.000, Daging Sapi sedang + Tipker Cokelat Kacang Wijen sedang + Teh Pucuk",
+               "eng":"Offline Price IDR 91,000, Medium Beef + Medium Sesame Bean Chocolate Tipker + Tea Shoots",
+               "price":112000,
+               "discPrice":115500,
+               "image":"image/1-bpjs1-pucuk.jpg"
+            },
+            {
+               "code":702,
+               "title":"BPJS 2 - Pucuk",
+               "ind":"Harga Offline Rp89.000, Daging Sapi sedang + Keju Special mini + Cokelat mini + Teh Pucuk",
+               "eng":"Offline price Rp. 89,000, Medium Beef + Mini Special Cheese + Mini Chocolate + Pucuk Tea",
+               "price":110500,
+               "discPrice":114000,
+               "image":"image/2-bpjs2-pucuk.jpg"
+            },
+            {
+               "code":703,
+               "title":"BPJS 3 - Pucuk",
+               "ind":"Harga Offline Rp110.000, Daging Sapi sedang + Cokelat Kacang Wijen sedang + Teh Pucuk",
+               "eng":"Offline price IDR 110,000, medium beef + medium sesame chocolate + tea shoots",
+               "price":129850,
+               "discPrice":140000,
+               "image":"image/3-bpjs3-pucuk.jpg"
+            },
+            {
+               "code":704,
+               "title":"BPJS 4 - Pucuk",
+               "ind":"Harga Offline Rp116.000, Daging Sapi sedang + Keju Special sedang + Teh Pucuk",
+               "eng":"Offline price Rp.116.000, medium beef + special cheese + tea shoots",
+               "price":126950,
+               "discPrice":147500,
+               "image":"image/4-bpjs4-pucuk.jpg"
+            },
+            {
+               "code":705,
+               "title":"Kitkat Greentea Jumbo",
+               "ind":"",
+               "eng":"",
+               "price":145500,
+               "discPrice":0,
+               "image":"image/5-kitkat-greentea-jumbo.jpg"
+            },
+            {
+               "code":706,
+               "title":"Kitkat Jumbo",
+               "ind":"",
+               "eng":"",
+               "price":145500,
+               "discPrice":0,
+               "image":"image/6-kitkat-jumbo.jpg"
+            },
+            {
+               "code":707,
+               "title":"Nutella Jumbo",
+               "ind":"",
+               "eng":"",
+               "price":145500,
+               "discPrice":0,
+               "image":"image/7-nutella-jumbo.jpg"
+            },
+            {
+               "code":708,
+               "title":"Toblerone Jumbo",
+               "ind":"",
+               "eng":"",
+               "price":145500,
+               "discPrice":0,
+               "image":"image/8-toblerone-jumbo.jpg"
+            },
+            {
+               "code":709,
+               "title":"Oreo Jumbo",
+               "ind":"",
+               "eng":"",
+               "price":124500,
+               "discPrice":0,
+               "image":"image/9-oreo-jumbo.jpg"
+            },
+            {
+               "code":710,
+               "title":"Special Orins Jumbo",
+               "ind":"",
+               "eng":"",
+               "price":133000,
+               "discPrice":0,
+               "image":"image/10-special-orins-jumbo.jpg"
+            }
+         ],
+         "image":"image/logo-martabak-orins.png"
+      },
+      {
+         "code":8,
+         "shopName":"McDonald's",
+         "address":"Jl. Tebet Barat Dalam I No.13, RT.13/RW.2, Tebet Bar., Kec. Tebet, Kota Jakarta Selatan.",
+         "mcd":[
+            {
+               "code":801,
+               "title":"PaHeBat Chicken Burger Deluxe, Large",
+               "ind":"",
+               "eng":"",
+               "price":41500,
+               "discPrice":0,
+               "image":"image/1-pahe-chicken-burger-l.jpg"
+            },
+            {
+               "code":802,
+               "title":"PaHeBat Chicken Burger Deluxe, Medium",
+               "ind":"",
+               "eng":"",
+               "price":35500,
+               "discPrice":0,
+               "image":"image/2-pahe-chicken-burger-m.jpg"
+            },
+            {
+               "code":803,
+               "title":"PaHeBat Mini Cuts Spicy Chicken",
+               "ind":"",
+               "eng":"",
+               "price":26000,
+               "discPrice":0,
+               "image":"image/3-pahe-mini-cuts.jpg"
+            },
+            {
+               "code":804,
+               "title":"PaNas 2 Krispy with Fries, Large",
+               "ind":"",
+               "eng":"",
+               "price":54000,
+               "discPrice":0,
+               "image":"image/4-panas2-crispy-l.jpg"
+            },
+            {
+               "code":805,
+               "title":"PaNas 2 Krispy with Fries, Medium",
+               "ind":"",
+               "eng":"",
+               "price":48000,
+               "discPrice":0,
+               "image":"image/5-panas2-crispy-m.jpg"
+            },
+            {
+               "code":806,
+               "title":"PaNas 2 Spicy with Fries, Large",
+               "ind":"",
+               "eng":"",
+               "price":54000,
+               "discPrice":0,
+               "image":"image/6-panas2-crispy-spicy-l.jpg"
+            },
+            {
+               "code":807,
+               "title":"PaNas 2  Spicy with Fries, Medium",
+               "ind":"",
+               "eng":"",
+               "price":48000,
+               "discPrice":0,
+               "image":"image/7-panas2-crispy-spicy-m.jpg"
+            },
+            {
+               "code":808,
+               "title":"PaMer 7 Krispy Medium",
+               "ind":"",
+               "eng":"",
+               "price":160000,
+               "discPrice":0,
+               "image":"image/8-pamer7-crispy-m.jpg"
+            },
+            {
+               "code":809,
+               "title":"PaMer 7 Spicy Medium",
+               "ind":"",
+               "eng":"",
+               "price":160000,
+               "discPrice":0,
+               "image":"image/9-pamer7-spicy-m.jpg"
+            },
+            {
+               "code":810,
+               "title":"PaMer 7 Mix Medium",
+               "ind":"",
+               "eng":"",
+               "price":160000,
+               "discPrice":0,
+               "image":"image/10-pamer7-mix-m.jpg"
+            }
+         ],
+         "image":"image/logo-mcd.jpg"
+      },
+      {
+         "code":9,
+         "shopName":"Mynum",
+         "address":"Jl. M. Kahfi 1 Blok Haji Idris No.10, RT.4/RW.2, Cipedak, Jagakarsa, Kota Jakarta Selatan.",
+         "mynum":[
+            {
+               "code":901,
+               "title":"Black Cookies Oreo",
+               "ind":"Minuman rasa black cookies oreo yang memiliki rasa manis, cocok untuk kamu pecinta manis",
+               "eng":"Black cookies oreo flavored drink that has a sweet taste, perfect for you sweet lovers",
+               "price":16000,
+               "discPrice":0,
+               "image":"image/1-black-cookies-oreo.jpg"
+            },
+            {
+               "code":902,
+               "title":"Es Permen Karet",
+               "ind":"",
+               "eng":"",
+               "price":13500,
+               "discPrice":0,
+               "image":"image/2-es-permen-karet.jpg"
+            },
+            {
+               "code":903,
+               "title":"Taro",
+               "ind":"Memiliki rasa paling khas dari yang lain, taro adalah pilihan tepat untuk menemani harimu",
+               "eng":"Having the most distinctive taste from others, taro is the right choice to accompany your day",
+               "price":15000,
+               "discPrice":0,
+               "image":"image/3-taro.jpg"
+            },
+            {
+               "code":904,
+               "title":"Brown Sugar Milk",
+               "ind":"Manisnya khas Brown Sugar dipadukan dengan susu segar menghasilkan rasa dan aroma yang khas membuat kamu ketagihan",
+               "eng":"The distinctive sweetness of Brown Sugar combined with fresh milk produces a distinctive taste and aroma that will make you addicted",
+               "price":15000,
+               "discPrice":0,
+               "image":"image/4-brown-sugar-milk.jpg"
+            },
+            {
+               "code":905,
+               "title":"Orange Squash",
+               "ind":"Segarkan harimu dengan cita rasa buah jeruk",
+               "eng":"Refresh your day with the taste of citrus fruit",
+               "price":14000,
+               "discPrice":0,
+               "image":"image/5-orange-squash.jpg"
+            },
+            {
+               "code":906,
+               "title":"Mango Yogurt",
+               "ind":"Segarnya Rasa Mangga Dipadukan Dengan Yogurt Menjadikan Minuman Ini Memiliki Rasa Lebih Spesial",
+               "eng":"The fresh taste of mango combined with yogurt makes this drink have a more special taste",
+               "price":15000,
+               "discPrice":0,
+               "image":"image/6-mango-yogurt.jpg"
+            },
+            {
+               "code":907,
+               "title":"Lychee Yogurt",
+               "ind":"Segarnya Rasa Lychee Ditambah Yogurt Menghasilkan Rasa Yang Menyegarkan",
+               "eng":"The fresh taste of lychee plus yogurt produces a refreshing taste",
+               "price":14000,
+               "discPrice":0,
+               "image":"image/7-lychee-yogurt.jpg"
+            },
+            {
+               "code":908,
+               "title":"Royal Chocolate",
+               "ind":"Nikmati rasa cokelat yang lebih kuat dari biasanya, hanya di varian Royal Chocolate",
+               "eng":"Enjoy a stronger chocolate taste than usual, only in the Royal Chocolate variant",
+               "price":15000,
+               "discPrice":0,
+               "image":"image/8-royal-chocolate.jpg"
+            },
+            {
+               "code":909,
+               "title":"Choco Hazelnut",
+               "ind":"Perpaduan rasa hazelnut dan cokelat, menghasilkan rasa choco hazelnut yang akan menyenangkan harimu",
+               "eng":"The combination of hazelnut and chocolate flavors, produces a choco hazelnut taste that will make your day",
+               "price":15000,
+               "discPrice":0,
+               "image":"image/9-choco-hazelnut.jpg"
+            },
+            {
+               "code":910,
+               "title":"Dark Chocolate",
+               "ind":"Sensasi rasa dark chocolate yang kuat, pas untuk kamu pecinta cokelat",
+               "eng":"A strong dark chocolate taste sensation, perfect for you chocolate lovers",
+               "price":14000,
+               "discPrice":0,
+               "image":"image/10-dark-chocolate.jpg"
+            }
+         ],
+         "image":"image/logo-mynum.jpg"
+      },
+      {
+         "code":10,
+         "shopName":"Pizza Hut",
+         "address":" Jl. Siliwangi No.9, Pamulang Bar., Kec. Pamulang, Kota Tangerang Selatan.",
+         "pizzaHut":[
+            {
+               "code":1001,
+               "title":"L1MO Pizza",
+               "ind":"Pizza 1 Meter dengan Pilihan 3 Topping Pizza",
+               "eng":"1 Meter Pizza with Choice of 3 Pizza Toppings",
+               "price":259000,
+               "discPrice":0,
+               "image":"image/1-limo-pizza.jpg"
+            },
+            {
+               "code":1002,
+               "title":"Double Box Regular FREE Softdrink",
+               "ind":"Combo Double Box Regular + GRATIS 2 Lemon Tea #cokecombodeals",
+               "eng":"Combo Double Box Regular + FREE 2 Lemon Tea #cokecombodeals",
+               "price":169000,
+               "discPrice":207000,
+               "image":"image/2-double-box-r.jpg"
+            },
+            {
+               "code":1003,
+               "title":"Double Box Large FREE Softdrink",
+               "ind":"Combo Double Box Large + GRATIS 2 Lemon Tea #cokecombodeals",
+               "eng":"Combo Double Box Large + FREE 2 Lemon Tea #cokecombodeals",
+               "price":223000,
+               "discPrice":257000,
+               "image":"image/3-double-box-l.jpg"
+            },
+            {
+               "code":1004,
+               "title":"My Box",
+               "ind":"(1 Pilihan Pizza / Pasta / Rice) + (1 Pilihan Appetizer)",
+               "eng":"(1 Choice of Pizza / Pasta / Rice) + (1 Choice of Appetizer)",
+               "price":40000,
+               "discPrice":45000,
+               "image":"image/4-mybox.jpg"
+            },
+            {
+               "code":1005,
+               "title":"My Box Hitss",
+               "ind":"(3 Pilihan Pizza / Pasta / Nasi) + (3 Pilihan Appetizer)",
+               "eng":"(3 Choices of Pizza / Pasta / Rice) + (3 Choices of Appetizer)",
+               "price":115000,
+               "discPrice":120000,
+               "image":"image/5-mybox-hits.jpg"
+            },
+            {
+               "code":1006,
+               "title":"Paket HEPI",
+               "ind":"Hidangan Utama 3 Personal PAN Pizza + 1 Appetizer + Upgrade Drink",
+               "eng":"Main Dish 3 Personal PAN Pizza + 1 Appetizer + Upgrade Drink",
+               "price":110000,
+               "discPrice":186000,
+               "image":"image/6-paket-hepi.jpg"
+            },
+            {
+               "code":1007,
+               "title":"Paket TRIPLE HEPI",
+               "ind":"Hidangan Utama 2 Personal PAN Pizza + 1 Pasta + 1 Appetizer + Upgrade Drink",
+               "eng":"Main Dish 2 Personal PAN Pizza + 1 Pasta + 1 Appetizer + Upgrade Drink",
+               "price":110000,
+               "discPrice":176000,
+               "image":"image/7-paket-triple-hepi.jpg"
+            },
+            {
+               "code":1008,
+               "title":"Triple Box",
+               "ind":"Pizza Reguler (All Topping), Choco Chesse Pizza, Rice Chicken Delight, Beef Lasagna, Chicken Popcorn, Sosis Frankfurter BBQ, Chicken Bruschetta, Roti Bawang Putih",
+               "eng":"Reguler Pizza ( All Topping ), Choco Chesse Pizza, Rice Chicken Delight, Beef Lasagna, Chicken Popcorn, Sausage Frankfurter BBQ, Chicken Bruschetta, Garlic Bread",
+               "price":299000,
+               "discPrice":0,
+               "image":"image/8-triple-box.jpg"
+            },
+            {
+               "code":1009,
+               "title":"Big Box",
+               "ind":"Pizza Reguler (Semua Topping)",
+               "eng":"Reguler Pizza (All Topping)",
+               "price":234000,
+               "discPrice":0,
+               "image":"image/9-big-box.jpg"
+            },
+            {
+               "code":1010,
+               "title":"Regular Splitza",
+               "ind":"",
+               "eng":"",
+               "price":131000,
+               "discPrice":0,
+               "image":"image/10-regular-splitza.jpg"
+            }
+         ],
+         "image":"image/logo-pizza-hut.jpg"
+      }
+   ]
+}

@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+ import React from "react";
+import { BrowserRouter as Router } from 'react-router-dom';
+import { GlobalStyle } from "./GlobalStyle.js";
+import Hero from './Components/Hero/indexH.js';
+import Products from "./Components/Products/indexP.js";
+import Feature from "./Components/Feature/indexF.js";
+import FeatureAcha from "./Components/FeatureAccha/indexF.js";
+import FeatureAyam from "./Components/FeatureAyam/indexF.js";
+
+import Footer from "./Components/Footer/indexfooter.js";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    
+    <Router> 
+      <GlobalStyle />        
+      <Hero />
+      <Products heading='Choose your favorite' />
+      <Feature />
+      <Products heading='Get your favorite Pizza'/>
+      <FeatureAcha/>
+      <Products heading='Enak dan Harganya Terjangkau'/>
+      <FeatureAyam/>
+      <Products heading='Enak dan Harganya Terjangkau'/>
+      <Footer />
+    </Router>
+    
+  );  
 }
 
 export default App;
+
+ 
