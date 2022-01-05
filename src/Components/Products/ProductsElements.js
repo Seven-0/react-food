@@ -12,7 +12,7 @@ export const ProductWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 ;
+  margin: 0 ; 
 `;
 
 export const ProductCard = styled.div`
@@ -20,6 +20,7 @@ export const ProductCard = styled.div`
   line-height: 2;
   width: 300px;  
   `;
+  
 
 export const ProductImg = styled.img`
   height: 300px;

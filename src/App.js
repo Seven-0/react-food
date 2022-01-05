@@ -4,8 +4,8 @@ import { GlobalStyle } from "./GlobalStyle.js";
 import Hero from './Components/Hero/indexH.js';
 import Products from "./Components/Products/indexP.js";
 import Feature from "./Components/Feature/indexF.js";
-import FeatureAcha from "./Components/FeatureAccha/indexF.js";
-import FeatureAyam from "./Components/FeatureAyam/indexF.js";
+// import FeatureAcha from "./Components/FeatureAccha/indexF.js";
+// import FeatureAyam from "./Components/FeatureAyam/indexF.js";
 
 import Footer from "./Components/Footer/indexfooter.js";
 
