@@ -41,40 +41,17 @@ const Products = ({ heading }) => {
   return (
     <ProductsContainer>
       <ProductsHeading className="heading"> {heading} </ProductsHeading>
-      {/* <ProductWrapper>    */}
       <Slider {...settings} className="myWrapper">
         {data.map((payload) => {
           return payload.shop.map((shop) => (
-            // return shop.Menus.map((menu) => (
               <React.Fragment>         
-                        
-                {/* <div class="shadow-sm p-2 mb-2 bg-white rounded"> */}
-                <Card key={shop.code} className="card-3" >
-                    
-                  <Card.Img variant="top" src={shop.image} />
-                  <Card.Body>
-                    <Card.Title className="titcen"><b>{shop.shopName}</b></Card.Title>
-                    {/* <Card.Text className="title"> {shop.ind} </Card.Text>
-                    <Card.Title className="titcen">
-                      <b> Rp. {shop.price} </b>
-                    </Card.Title> */}
+                <Card key={shop.code} className="cardWrapper">
+                  <Card.Body className="cardBody">
+                    <Card.Img className="cardImg" variant="top" src={shop.image} />
+                    <Card.Title className="titcen">{shop.shopName}</Card.Title>
                   </Card.Body>
                 </Card>
-                {/* </div> */}
-                {/* <Card  >
-                      <Card.Body>
-                        <ProductContainer
-                          key={menu.code}
-                          img={menu.image}
-                          title={menu.title}
-                          desc={menu.ind}
-                          price={menu.price}
-                        />
-                        </Card.Body>
-                     </Card> */}
-                {/* </Col> */}
               </React.Fragment>
-            // ));
             ));
         })}
       </Slider>
