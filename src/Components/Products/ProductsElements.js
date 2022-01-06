@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const ProductsContainer = styled.div`
   width: 100vw;
-  min-height: 100vh;
-  padding: 5rem calc((100vw - 1300px) / 2);
+  min-height: 40vh;
+  padding: 1rem calc((100vw - 1400px)/ 2);
   background: #fff;
   color: #fff;
 `;
@@ -33,9 +33,9 @@ export const ProductImg = styled.img`
 `;
 
 export const ProductsHeading = styled.h1`
-  font-size: clamp(2rem, 2.5vw, 3rem);
+  font-size: clamp(3rem, 2.5vw, 3rem);
   text-align: center;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 `;
 
 export const ProductTitle = styled.h2`

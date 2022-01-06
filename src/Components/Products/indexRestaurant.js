@@ -10,7 +10,7 @@ import {
 ProductsHeading,
 } from "./ProductsElements";
 import Card from 'react-bootstrap/Card'
-import CardHeader from "react-bootstrap/esm/CardHeader";
+// import CardHeader from "react-bootstrap/esm/CardHeader";
 
 const Products = ({ heading }) => {
   const [data, setShops] = useState([]);
@@ -33,14 +33,16 @@ const Products = ({ heading }) => {
     dots: false,
     infinite: false,
     speed: 400,
-    slidesToShow: 5,
-    slidesToScroll: 3,
+    slidesToShow: 6,
+    slidesToScroll: 4,
     arrows: false,
   };
 
   return (
-    <ProductsContainer>
-      <ProductsHeading className="heading"> {heading} </ProductsHeading>
+    <ProductsContainer>       
+      <ProductsHeading className="heading"> 
+      <h1> {heading} </h1>     
+      </ProductsHeading>      
       {/* <ProductWrapper>    */}
       <Slider {...settings} className="myWrapper">
         {data.map((payload) => {
@@ -49,8 +51,7 @@ const Products = ({ heading }) => {
               <React.Fragment>         
                         
                 {/* <div class="shadow-sm p-2 mb-2 bg-white rounded"> */}
-                <Card key={shop.code} className="card-3" >
-                    
+                <Card key={shop.code} className="card-3" >                    
                   <Card.Img variant="top" src={shop.image} />
                   <Card.Body>
                     <Card.Title className="titcen"><b>{shop.shopName}</b></Card.Title>
@@ -77,7 +78,9 @@ const Products = ({ heading }) => {
             // ));
             ));
         })}
-      </Slider>
+      </Slider>      
+      <hr1 className="lines"/>
+      
     </ProductsContainer>
   );
 };
