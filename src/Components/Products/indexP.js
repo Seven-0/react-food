@@ -1,20 +1,17 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
 import ProductContainer from "./ProductContainer";
-
-// import { Row, Card, Col } from "react-bootstrap";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import "./items.css";
 import {
   ProductsContainer,
-  ProductWrapper,
+  // ProductWrapper,
   ProductsHeading,
-  // ProductTitle,
-  // ProductCard,
-  // ProductImg,
-  // ProductInfo,
-  // ProductDesc,
-  // ProductPrice,
-  // ProductButton,
 } from "./ProductsElements";
+import { Card, Col } from "react-bootstrap";
+
 
 const Products = ({ heading }) => {
   const [data, setShops] = useState([]);
@@ -32,33 +29,48 @@ const Products = ({ heading }) => {
         console.log(error);
       });
   }, []);
-
-  return (
-    <div>
-      <ProductsContainer>
-        <ProductsHeading> {heading} </ProductsHeading>
-        <ProductWrapper>
-          {data.map((payload) => {          
-            return (
-              payload.shop.map((shop) =>{
-                return(
-                  shop.Menus.map(menu => (
-                    <ProductContainer
-                    key={menu.code.toString()}
-                    img={menu.image}
-                    title={menu.title}
-                    desc={menu.ind}
-                    price={menu.price} 
-                    />
-
-                  )
-                ));
-
-              }));
+  
+  const settings={
+    dots: false,
+    infinite: false,
+    speed: 400,
+    slidesToShow:4,
+    slidesToScroll: 3,
+    arrows: false,
+  
+  };
+  
+  return (         
+     <ProductsContainer>
+        <ProductsHeading> {heading} </ProductsHeading>          
+        {/* <ProductWrapper>    */}
+        <Slider  {...settings} className="myWrapper" >
+          {data.map((payload) => {
+            return payload.shop.map((shop) => {
+              return shop.Menus.map((menu) => (
+                <React.Fragment>
+                  <Col>
+                    <Card >
+                      <Card.Body>
+                        <ProductContainer
+                          key={menu.code}
+                          img={menu.image}
+                          title={menu.title}
+                          desc={menu.ind}
+                          price={menu.price}
+                        />
+                        </Card.Body>
+                     </Card>
+                   </Col>
+                  </React.Fragment>
+              ));
+            });
           })}
-        </ProductWrapper>
+           </Slider>
+            
       </ProductsContainer>
-    </div>
+    
+    
   );
 };
 

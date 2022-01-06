@@ -1,0 +1,21 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.Slider{
+  display: flex;
+  justify-content: center
+}
+@media only screen and (max-width:700px){
+  .myWrapper{
+    height: 70vh;
+  }
+}
+
+.myWrapper{
+  display: flexs ;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  }

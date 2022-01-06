@@ -12,19 +12,24 @@ export const ProductWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 ; 
+  margin: 0;
+
+  @media screen and (max-width: 650px) {
+    width: 100%;
+  }
+  
 `;
 
 export const ProductCard = styled.div`
   margin: 0 2rem;
   line-height: 2;
-  width: 300px;  
+  width: 250px;  
   `;
   
 
 export const ProductImg = styled.img`
-  height: 300px;
-  min-width: 300px;
+  height: 250px;
+  min-width: 250px;
   max-width: 100%;
   box-shadow: 8px 8px #fdc500;
 `;
