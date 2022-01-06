@@ -1,16 +1,15 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
-import ProductContainer from "./ProductContainer";
+// import ProductContainer from "./ProductContainer";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import "./items.css";
 import {
   ProductsContainer,
-  // ProductWrapper,
-  ProductsHeading,
+ProductsHeading,
 } from "./ProductsElements";
-import { Card, Col } from "react-bootstrap";
+import Card from 'react-bootstrap/Card'
 import CardHeader from "react-bootstrap/esm/CardHeader";
 
 const Products = ({ heading }) => {
@@ -34,7 +33,7 @@ const Products = ({ heading }) => {
     dots: false,
     infinite: false,
     speed: 400,
-    slidesToShow: 2,
+    slidesToShow: 5,
     slidesToScroll: 3,
     arrows: false,
   };
@@ -43,24 +42,25 @@ const Products = ({ heading }) => {
     <ProductsContainer>
       <ProductsHeading className="heading"> {heading} </ProductsHeading>
       {/* <ProductWrapper>    */}
-      <Slider {...settings}>
+      <Slider {...settings} className="myWrapper">
         {data.map((payload) => {
-          return payload.shop.map((shop) => {
-            return shop.Menus.map((menu) => (
-              <React.Fragment>
-                {/* <Col> */}
-                <div class="shadow p-3 mb-5 bg-white rounded">
-                <Card style={{ width: "18rem" }} key={menu.code}>
-                  <Card.Img variant="top" src={menu.image} />
+          return payload.shop.map((shop) => (
+            // return shop.Menus.map((menu) => (
+              <React.Fragment>         
+                        
+                {/* <div class="shadow-sm p-2 mb-2 bg-white rounded"> */}
+                <Card key={shop.code} className="card-3" >
+                    
+                  <Card.Img variant="top" src={shop.image} />
                   <Card.Body>
-                    <Card.Title className="card-title"><b>{menu.title}</b></Card.Title>
-                    <Card.Text className="text"> {menu.ind} </Card.Text>
+                    <Card.Title className="titcen"><b>{shop.shopName}</b></Card.Title>
+                    {/* <Card.Text className="title"> {shop.ind} </Card.Text>
                     <Card.Title className="titcen">
-                      <b> Rp. {menu.price} </b>
-                    </Card.Title>
+                      <b> Rp. {shop.price} </b>
+                    </Card.Title> */}
                   </Card.Body>
                 </Card>
-                </div>
+                {/* </div> */}
                 {/* <Card  >
                       <Card.Body>
                         <ProductContainer
@@ -74,8 +74,8 @@ const Products = ({ heading }) => {
                      </Card> */}
                 {/* </Col> */}
               </React.Fragment>
+            // ));
             ));
-          });
         })}
       </Slider>
     </ProductsContainer>

@@ -3,7 +3,7 @@ import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { GlobalStyle } from "./GlobalStyle.js";
 import Hero from './Components/Hero/indexH.js';
-import Products from "./Components/Products/indexp2.js";
+import Products from "./Components/Products/indexRestaurant.js";
 import Feature from "./Components/Feature/indexF.js";
 // import SearchBox from "./Components/Items/Search.js";
 // import FeatureAcha from "./Components/FeatureAccha/indexF.js";
