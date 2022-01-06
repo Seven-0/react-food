@@ -11,7 +11,7 @@ import {
   ProductsHeading,
 } from "./ProductsElements";
 import { Card, Col } from "react-bootstrap";
-
+import CardHeader from "react-bootstrap/esm/CardHeader";
 
 const Products = ({ heading }) => {
   const [data, setShops] = useState([]);
@@ -29,27 +29,37 @@ const Products = ({ heading }) => {
         console.log(error);
       });
   }, []);
-  
-  const settings={
+
+  const settings = {
     dots: false,
     infinite: false,
     speed: 400,
-    slidesToShow:4,
+    slidesToShow: 4,
     slidesToScroll: 3,
-    arrows: false,  
+    arrows: false,
   };
-  
-  return (         
-     <ProductsContainer>
-        <ProductsHeading> {heading} </ProductsHeading>          
-        {/* <ProductWrapper>    */}
-        <Slider  {...settings} className="myWrapper" >
-          {data.map((payload) => {
-            return payload.shop.map((shop) => {
-              return shop.Menus.map((menu) => (
-                <React.Fragment>
-                  <Col>
-                    <Card  >
+
+  return (
+    <ProductsContainer>
+      <ProductsHeading> {heading} </ProductsHeading>
+      {/* <ProductWrapper>    */}
+      <Slider {...settings} className="myWrapper">
+        {data.map((payload) => {
+          return payload.shop.map((shop) => {
+            return shop.Menus.map((menu) => (
+              <React.Fragment>
+                {/* <Col> */}
+                <Card style={{ width: "18rem" }} key={menu.code}>
+                  <Card.Img variant="top" src={menu.image} />
+                  <Card.Body>
+                    <Card.Title className="titcen">{menu.title}</Card.Title>
+                    <Card.Text className="title"> {menu.ind} </Card.Text>
+                    <Card.Title className="titcen">
+                      <b> Rp. {menu.price} </b>
+                    </Card.Title>
+                  </Card.Body>
+                </Card>
+                {/* <Card  >
                       <Card.Body>
                         <ProductContainer
                           key={menu.code}
@@ -59,17 +69,14 @@ const Products = ({ heading }) => {
                           price={menu.price}
                         />
                         </Card.Body>
-                     </Card>
-                   </Col>
-                  </React.Fragment>
-              ));
-            });
-          })}
-           </Slider>
-            
-      </ProductsContainer>
-    
-    
+                     </Card> */}
+                {/* </Col> */}
+              </React.Fragment>
+            ));
+          });
+        })}
+      </Slider>
+    </ProductsContainer>
   );
 };
 
