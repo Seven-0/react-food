@@ -1,0 +1,46 @@
+{
+  "values": [
+    {
+      "id": 1,
+      "email": "seven@gmail.com",
+      "phonenumber": "0812345678",
+      "password": "abcd"
+    },
+    {
+      "email": "sean@gmail.com",
+      "phonenumber": "0987654321",
+      "password": "sean123",
+      "id": 2
+    },
+    {
+      "email": "simanjuntak@gmail.com",
+      "phonenumber": "123456",
+      "password": "1456789",
+      "id": 3
+    },
+    {
+      "email": "",
+      "phonenumber": "",
+      "password": "",
+      "id": 4
+    },
+    {
+      "email": "",
+      "phonenumber": "",
+      "password": "",
+      "id": 5
+    },
+    {
+      "email": "",
+      "phonenumber": "",
+      "password": "",
+      "id": 6
+    },
+    {
+      "email": "",
+      "phonenumber": "",
+      "password": "",
+      "id": 7
+    }
+  ]
+}

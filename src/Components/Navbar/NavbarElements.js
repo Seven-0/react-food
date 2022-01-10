@@ -1,7 +1,5 @@
-// import { findByLabelText } from "@testing-library/react";
 import styled from 'styled-components';
 import {NavLink as Link} from 'react-router-dom';
-// import  {IoFastFoodOutline} from 'react-icons/fa';
 import {IoFastFoodOutline } from "react-icons/io5"
 
 

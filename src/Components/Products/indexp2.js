@@ -1,19 +1,20 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
-import ProductContainer from "./ProductContainer";
+// import ProductContainer from "./ProductContainer";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import "./items.css";
+// import NumberFormat from 'react-number-format';
 import {
   ProductsContainer,
   // ProductWrapper,
   ProductsHeading,
 } from "./ProductsElements";
-import { Card, Col } from "react-bootstrap";
-import CardHeader from "react-bootstrap/esm/CardHeader";
+import { Card } from "react-bootstrap";
+// import CardHeader from "react-bootstrap/esm/CardHeader";
 
-const Products = ({ heading }) => {
+const Product = ({ heading }) => {
   const [data, setShops] = useState([]);
 
   useEffect(() => {
@@ -34,45 +35,35 @@ const Products = ({ heading }) => {
     dots: false,
     infinite: false,
     speed: 400,
-    slidesToShow: 2,
-    slidesToScroll: 3,
+    slidesToShow: 5,
+    slidesToScroll: 4,
     arrows: false,
   };
 
   return (
     <ProductsContainer>
       <ProductsHeading className="heading"> {heading} </ProductsHeading>
-      {/* <ProductWrapper>    */}
       <Slider {...settings}>
         {data.map((payload) => {
           return payload.shop.map((shop) => {
             return shop.Menus.map((menu) => (
               <React.Fragment>
-                {/* <Col> */}
-                <div class="shadow p-3 mb-5 bg-white rounded">
-                <Card style={{ width: "18rem" }} key={menu.code}>
-                  <Card.Img variant="top" src={menu.image} />
+                <Card key={menu.code} className="cardWrapper2">
+                  <Card.Img vari7ant="top" src={menu.image} className="card-img-bottom"/>
                   <Card.Body>
-                    <Card.Title className="card-title"><b>{menu.title}</b></Card.Title>
-                    <Card.Text className="text"> {menu.ind} </Card.Text>
-                    <Card.Title className="titcen">
+                    <Card.Title className="title">
+                      <h5>  
+                      <b>{menu.title}</b>
+                      </h5>
+                    </Card.Title>
+                    <Card.Text className="title"> 
+                    <h6> {menu.ind} </h6> </Card.Text>
+                    <Card.Title className="title">
+                    {/* <NumberFormat thousandSeparator={true} prefix={'Rp. '} value={menu.price} /> */}
                       <b> Rp. {menu.price} </b>
                     </Card.Title>
                   </Card.Body>
                 </Card>
-                </div>
-                {/* <Card  >
-                      <Card.Body>
-                        <ProductContainer
-                          key={menu.code}
-                          img={menu.image}
-                          title={menu.title}
-                          desc={menu.ind}
-                          price={menu.price}
-                        />
-                        </Card.Body>
-                     </Card> */}
-                {/* </Col> */}
               </React.Fragment>
             ));
           });
@@ -82,4 +73,4 @@ const Products = ({ heading }) => {
   );
 };
 
-export default Products;
+export default Product;
