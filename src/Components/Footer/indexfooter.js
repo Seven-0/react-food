@@ -12,12 +12,12 @@ import {
 
 const Footer = () => {
     return (
-        <FooterContainer>
-            <FooterWrap>
+        <FooterContainer className='footer'>
+            <FooterWrap className='container footer-container'>
                 <SocialMedia>
-                    <SocialMediaWrap>
-                        <SocialLogo to="/"> KHANAVAL FOOD </SocialLogo>
-                        <SocialIcons>
+                    <SocialMediaWrap className='footer-wrapper'>
+                        <SocialLogo to="/" className='logo'> KHANAVAL FOOD </SocialLogo>
+                        <SocialIcons className='footer-social-media'>
                             <SocialIconLink href="/" target="_blank" aria-label="Facebook">
                                 <FaFacebook />
                             </SocialIconLink>

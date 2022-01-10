@@ -1,13 +1,16 @@
 import React from "react";
-import { FeatureContainer, FeatureButton } from "./FeatureElements";
-// import { FeatureContainer, FeatureButton} from './FeatureMynum';
 
 const Feature = () => {
   return (
-    <FeatureContainer>
-      <h1> WISATA FROM HOME BARENG L1MO PIZZA </h1>
-      <FeatureButton> Order Now </FeatureButton>
-    </FeatureContainer>
+    <section className='section section-teaser'>
+      <div className='container'>
+        <div className='text-wrapper'>
+          <h2 className='hero-text'> wisata from home bareng l1mo pizza </h2>
+          <button className="button btn-yellow">order now</button>
+        </div>
+      </div>
+    </section>
+
   );
 };
 
