@@ -28,9 +28,10 @@ function App() {
         <Products heading='restaurant' />   
         <Feature />   
         
-        {/* <Hero />*/}
-
+        {/* <Hero /> */}
+        
       </Route>
+      
       
       <Footer />
             

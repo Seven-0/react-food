@@ -4,15 +4,16 @@ import { FaTimes } from "react-icons/fa";
 
 export const SidebarContainer = styled.aside`
   position: fixed;
-  z-index: 999;
   width: 350px;
   height: 100%;
-  background: #ffc500;
+  background: #fff;
   display: grid;
   align-items: center;
   top: 0;
   transition: 0.3s ease-in-out;
   right: ${({ isOpen }) => (isOpen ? "0" : "-1000px")};
+  z-index: 9999;
+  border-left: 1px solid #ffff00;
 
   @media screen and (max-width: 400px) {
     width: 100%;
@@ -37,17 +38,19 @@ export const Icon = styled.div`
 export const SidebarMenu = styled.div`
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 80px);
+  grid-template-rows: repeat(3, 50px);
   text-align: center;
+  padding: 0 30px;
 
   @media screen and (max-width: 480px) {
     grid-template-rows: repeat(3, 60px);
   }
 `;
+
 export const SidebarLink = styled(Link)`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   font-size: 1.5rem;
   text-decoration: none;
   list-style: none;
