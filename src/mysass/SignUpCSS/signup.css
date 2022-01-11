@@ -66,7 +66,7 @@
 .form {
   position: absolute;
   top: 50%;
-  left: 72%;
+  left: 50%;
   transform: translate(-50%, -50%);
   width: 54%;
   height: 100%;
@@ -79,7 +79,7 @@
 .background {
   background-size: cover;
   background-position: center;
-  background-image: url("signup.png");
+  background-image: url("../../image/signup.png");
   width: 37%;
   height: 79%;
   position: absolute;
@@ -91,7 +91,7 @@
 .backgroundSuccess{
   background-size: cover;
   background-position: center;
-  background-image: url("Success.png");
+  background-image: url("../../image/Success.png");
   width: 18%;
   height: 64%;
   position: absolute;

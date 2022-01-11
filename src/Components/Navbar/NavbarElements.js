@@ -34,8 +34,6 @@ cursor: Pointer;
 color:  #fff;
 font-size: 1.1rem;
 
-
-
 p{
     transform: translate(-120%, 60%);
     font-weight: bold;

@@ -20,7 +20,7 @@ const Product = ({ heading }) => {
   useEffect(() => {
     axios
       .get(
-        "http://midas-be-task.herokuapp.com/midas/config/v1/foodDelivery/dataContent?version=1"
+        "https://midas-be-task.herokuapp.com/midas/config/v1/foodDelivery/dataContent?version=1"
       )
       .then(async (Response) => {
         console.log("Respone:", Response.data.payload);
