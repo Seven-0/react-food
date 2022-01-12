@@ -179,52 +179,57 @@ function Login() {
   }
 
   return(
-    <section className='section landing-page landing-form page-login'>
-      <div className='container'>
-        <div className='text-wrapper'>
-          <h1 className='hero-text'> login with your exsiting khanaval account </h1>
-          <div className="box-wrapper">
-            <form className="form">
-              <div className="form-group">
-                <input
-                    type="text"
-                    name="email" 
-                    placeholder="Email"
-                    value={dataUser.email}
-                    onBlur={handleChange}
-                    onChange={handleChange}
-                />
-                <div className="input-feedback">{error["email"]}</div>
+    <section className="section landing-page landing-form page-login">
+      <div className="screen-wrapper row">
+          <div className="col-lg-8 col-md-8 col-xs-12 col col-img">
+            <div className="background-image img-fluid"></div>
+          </div>
+          <div className="col-lg-4 col-md-4 col-xs-12 col col-form">
+            <h1 className='hero-text'> login with your exsiting khanaval account </h1>
+            <div className="box-wrapper">
+              <form className="form">
+                <div className="form-group">
+                  <input
+                      type="text"
+                      name="email" 
+                      placeholder="Email"
+                      value={dataUser.email}
+                      onBlur={handleChange}
+                      onChange={handleChange}
+                  />
+                  <div className="input-feedback">{error["email"]}</div>
+                </div>
+                <div className="form-group">
+                  <input
+                      name="password" 
+                      type="password"
+                      placeholder="Password"
+                      value={dataUser.password}
+                      maxLength="8"
+                      onBlur={handleChange}
+                      onChange={handleChange}
+                  />
+                  <div className="input-feedback">{error["password"]}</div>
+                </div>
+                <div className="form-group">
+                    <button type="submit" onClick={handleSubmit} className="button btn-blue"> Log in </button>
+                </div>
+              </form>
+
+              <div className="button-wrapper cta-forget-password">
+               <a href="/" className="link">forget password?</a>
               </div>
-              <div className="form-group">
-                <input
-                    name="password" 
-                    type="password"
-                    placeholder="Password"
-                    value={dataUser.password}
-                    maxLength="8"
-                    onBlur={handleChange}
-                    onChange={handleChange}
-                />
-                <div className="input-feedback">{error["password"]}</div>
+              <div className="button-wrapper cta-signup">
+               <a href="#" className="button btn-border-blue">sign up</a>  
               </div>
-              <div className="form-group">
-                  <button type="submit" onClick={handleSubmit} className="button btn-blue"> Log in </button>
-              </div>
-            </form>
-            <div className="button-wrapper cta-forget-password">
-              <a href="/" className="link">forget password?</a>
             </div>
-            <div className="button-wrapper cta-signup">
-              <a href="#" className="button btn-border-blue">sign up</a>  
+
+            <div className="disclaimer">
+             <p>By Logging in you are agree to khanaval's Terms of Service, Privacy Policy and Content Policies</p>        
             </div>
+
           </div>
 
-          <div className="disclaimer">
-            <p>By Logging in you are agree to khanaval's Terms of Service, Privacy Policy and Content Policies</p>        
-          </div>
-
-        </div>
       </div>
     </section>
     

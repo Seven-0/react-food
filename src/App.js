@@ -17,7 +17,10 @@ function App() {
     <Router> 
       
       <GlobalStyle/> 
-      <TopHeader />
+      <Route exact path="/">
+          <TopHeader />
+      </Route>
+      
       <Switch>
         {/* <Route path="/" exact component={HeroBanner} /> */}
         <Route path="/login" component={Login} />

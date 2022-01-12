@@ -171,7 +171,6 @@ a{
 
 // menu profile account
 
-
 .form-control{
   font-size: 16px;
   padding: 10px 20px;
@@ -192,7 +191,7 @@ a{
 
   .hero-text{
     text-align: center;
-    font-size: 40px;
+    font-size: 32px;
     text-transform: capitalize;
     margin-bottom: 30px;
   }
@@ -272,6 +271,7 @@ a{
   }
   .logo{
     color: $white;
+    margin-bottom: 0;
   }
   .footer-social-media{
     a{
@@ -291,16 +291,19 @@ a{
   padding: 150px 0 50px;
 }
 .landing-form{
+  padding: 0;
+  min-height: 91vh;
+
   .box-wrapper{
     max-width: 800px;
     margin: auto;
   }
   .form{
     max-width: 800px;
-    margin: 50px auto 30px;
+    margin: 50px auto 15px;
   }
   .form-group{
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 
     &:last-child{
       margin-bottom: 0;
@@ -327,6 +330,33 @@ a{
     width: 100%;
   }
 }
+
+.screen-wrapper{
+  display: flex;
+  width: 100%;
+
+  .col{
+    align-self: center;
+  }
+  .col-img{
+    .background-image{
+      position: relative;
+      background: url(../image/background-burger2.jpg) center no-repeat;
+      background-size: cover;
+      height: 91vh;
+
+      &:before{
+        content:'';
+        background: rgba(0,0,0,.3);
+        position: absolute;
+        @include size(100%,100%);
+        top:0;
+        left: 0;
+      }
+    }
+  }
+}
+
 .page-login{
   .button-wrapper{
     margin-bottom: 30px;
