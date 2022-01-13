@@ -25,8 +25,8 @@ function TopHeader() {
                         <div className='col col-lg-9 col-md-9 col-xs-9 cols col-nav'>
                             <div className='nav-wrapper'>
                                 <ul>
-                                    <li><input type="text" name="search" placeholder='Search' className='form-control form-search' /></li>
-                                    <li className='button btn-border-blue'>cart</li>
+                                    {/* <li><input type="text" name="search" placeholder='Search' className='form-control form-search' /></li>
+                                    <li className='button btn-border-blue'>cart</li> */}
                                     <Link to="/login">
                                         <li className='button btn-blue'>masuk/daftar</li>
                                     </Link>

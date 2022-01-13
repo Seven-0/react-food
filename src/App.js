@@ -10,6 +10,7 @@ import Home from "./Components/Home/Home";
 import Login from "./Components/Login/Login";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './mysass/App.css';
+import './mysass/App-media.css';
 
 function App() {
   return (
@@ -35,8 +36,10 @@ function App() {
         
       </Route>
       
+      <Route exact path="/">
+        <Footer />
+      </Route>
       
-      <Footer />
             
     </Router>
     </div>

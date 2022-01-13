@@ -181,11 +181,11 @@ function Login() {
   return(
     <section className="section landing-page landing-form page-login">
       <div className="screen-wrapper row">
-          <div className="col-lg-8 col-md-8 col-xs-12 col col-img">
+          <div className="col-lg-8 col-md-7 col-xs-12 col col-img">
             <div className="background-image img-fluid"></div>
           </div>
-          <div className="col-lg-4 col-md-4 col-xs-12 col col-form">
-            <h1 className='hero-text'> login with your exsiting khanaval account </h1>
+          <div className="col-lg-4 col-md-5 col-xs-12 col col-form">
+            <h1 className='hero-text'> login <br/> for khanaval food </h1>
             <div className="box-wrapper">
               <form className="form">
                 <div className="form-group">

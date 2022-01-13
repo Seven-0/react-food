@@ -82,7 +82,7 @@ h1{
   font-size: 32px;
 }
 h2{
-  font-size: 20px;
+  font-size: 28px;
 }
 p, span, li{
   font-size: 16px;
@@ -292,7 +292,6 @@ a{
 }
 .landing-form{
   padding: 0;
-  min-height: 91vh;
 
   .box-wrapper{
     max-width: 800px;
@@ -343,7 +342,7 @@ a{
       position: relative;
       background: url(../image/background-burger2.jpg) center no-repeat;
       background-size: cover;
-      height: 91vh;
+      height: 100vh;
 
       &:before{
         content:'';
