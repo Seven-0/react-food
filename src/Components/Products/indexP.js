@@ -4,12 +4,12 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import "./items.css";
-import {
-  ProductsContainer,
-  ProductsHeading,
-} from "./ProductsElements";
+// import {
+//   ProductsContainer,
+//   ProductsHeading,
+// } from "./ProductsElements";
 import Card from 'react-bootstrap/Card'
-import CardHeader from "react-bootstrap/esm/CardHeader";
+// import CardHeader from "react-bootstrap/esm/CardHeader";
 
 const Products = ({ heading }) => {
   const [data, setShops] = useState([]);

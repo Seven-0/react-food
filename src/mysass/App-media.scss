@@ -1,0 +1,124 @@
+@mixin border-radius($radius){
+    -webkit-border-radius: $radius;
+       -moz-border-radius: $radius;
+        -ms-border-radius: $radius;
+            border-radius: $radius;
+}
+@mixin border($border){
+-webkit-border: $border;
+    -moz-border: $border;
+    -ms-border: $border;
+        border: $border;
+}
+@mixin transition($transition){
+-webkit-transition: $transition;
+    -moz-transition: $transition;
+    -ms-transition: $transition;
+        transition: $transition;
+}
+@mixin transform($transform){
+-webkit-transform: $transform;
+    -moz-transform: $transform;
+    -ms-transform: $transform;
+        transform: $transform;
+}
+@mixin box-shadow ($box-shadow){
+-webkit-box-shadow: $box-shadow;
+    -moz-box-shadow: $box-shadow;
+    -ms-box-shadow: $box-shadow;
+        box-shadow: $box-shadow;
+}
+@mixin push-auto{
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+@mixin size($width, $height){ 
+    width: $width;
+    height: $height;
+}
+@mixin align-center{
+    position: relative;
+    top: 50%;
+@include transform(translateY(-50%));
+}
+@mixin elipsis3{
+    overflow: hidden;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    -webkit-line-clamp: 3;
+    -moz-line-clamp: 3;
+    -ms-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -ms-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+  
+// base color
+$black: #000;
+$white: #fff;
+$light-blue: #6DA1F4;
+$light-grey: #A2A2A2;
+$red: #FF0000;
+$yellow: #FFB803;
+$dark-grey: #343a40;
+
+
+@media only screen and (max-width : 992px){
+    h1{
+        font-size: 28px;
+    } 
+    h2{
+        font-size: 24px;
+    } 
+    p,span,li{
+        font-size: 14px;
+    }
+    .section{
+        .hero-text{
+            font-size: 28px;
+        }
+    }
+    .landing-form{
+        .input-feedback{
+            font-size: 12px;
+        }
+    }
+    .page-login{
+        .cta-forget-password{
+            .link{
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width : 576px){
+    .landing-form{
+        padding: 50px 0 30px;
+
+        &.page-login{
+            .screen-wrapper{
+                margin: 0 auto;
+                padding: 0 0.75rem;
+
+                .col-img{
+                    display: none;
+                }
+            }
+            .disclaimer{
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width : 320px){
+ 
+}
+
+@media only screen and (min-width : 768px) and (max-width: 1024px){
+
+}

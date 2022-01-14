@@ -1,7 +1,12 @@
-import React, { useState } from "react";
-import "../../mysass/SignUpCSS/signup2.css";
-// import * as EmailValidator from "email-validator";
-// import "../../mysass/App.css"
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faYoutube,
+  faFacebook,
+  faTwitter,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 
 function SignUp() {
   const Data = {
@@ -9,23 +14,23 @@ function SignUp() {
     phonenumber: "",
     password: "",
   };
+
   const [dataUser, setDataUser] = useState(Data);
   const [error, setError] = useState({});
-
+  
   const validasi = (fieldValue = dataUser) => {
     let temp = { ...error };
 
-    if ("email" in fieldValue) {
-      // temp.email = !/\S+@\S+\.\S+/.test(fieldValue.email) && fieldValue.email.length >= 1 ? "Invalid Email " : ""
-      // || fieldValue.email === "" ? "Email is required" : "";
+    // Validation Email
+    if ("email" in fieldValue) {      
       temp.email =
         fieldValue.email === ""
           ? "Email is required"
           : "" || !/\S+@\S+\.\S+/.test(fieldValue.email)
           ? "Invalid Email "
           : "";
-      console.log("Temporary Email :", temp.email);
-    }
+      console.log("Temporary Email :", fieldValue.email);    }
+    // Validation Phone Number
     const phonenumberRegex = /([0])/;
     if ("phonenumber" in fieldValue) {
       temp.phonenumber =
@@ -33,13 +38,12 @@ function SignUp() {
           ? "Phone Number is required"
           : "" || !phonenumberRegex.test(fieldValue.phonenumber)
           ? "Invalid Phone Number "
-          : "" || fieldValue.phonenumber.length < 7
-          ? "Phone Number must be 7 characters long"
-          : "";
-    }
+          : "" || fieldValue.phonenumber.length < 6
+          ? "Invalid Phone Number character length"
+          : "";    }
+    // Validation Password
     const passwordNumberRegex = /(?=.*[0-9])/;
     const passwordUppercaseRegex = /([a-z].[A-Z])|([A-Z].[a-z])/;
-    // const passwordMaxLengthRegex = /({1,8})/;
     if ("password" in fieldValue) {
       temp.password =
         fieldValue.password === ""
@@ -51,8 +55,9 @@ function SignUp() {
           : "" || !passwordUppercaseRegex.test(fieldValue.password)
           ? " Password must be have Uppercase Characters"
           : "";
+      console.log("my password:", fieldValue.password);
     }
-    console.log(temp);
+    console.log("message:", temp);
     setError({
       ...temp,
     });
@@ -69,88 +74,115 @@ function SignUp() {
     console.log("error", error);
   };
 
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const handleSubmit = async (e) => {
+  function handleSubmit(e) {
     e.preventDefault();
-    
-    // const signup = {dataUser};
-    await fetch("http://localhost:5050/values", {
-      method: "POST",
-      body: JSON.stringify(dataUser),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+    validasi();
 
-    setError(validasi(Data));
-    setIsSubmitting(true);
-
-    console.log("add Data ", Data);
-  };
+    // useEffect(data => {
+    //   // POST request using axios inside useEffect React hook
+    //   const headers = {
+    //     "Conten-Type": "application/json",
+    //     Signature: "midasfooddelivery",
+    //   };
+    //   const url = "https://midas-food-delivery-users.herokuapp.com/v1/signup";
+    //   axios
+    //     .post(url, { headers })
+    //     .then(async (response) => {
+    //       console.log("Respone:", response.data.payload);
+    //       Data(response.data);
+    //     })
+    //     .catch((error) => {
+    //       console.log(error);
+    //     });
+    // }, []);
   
+
+    console.log("Login Submitted:", dataUser.validasi);
+  }
+
   return (
     <section className="section landing-page landing-form page-login">
-      <div className="container">
-        <div className="text-wrapper">
-          <h1 className="hero-text">Sign Up Using Phone Number</h1>                  
-          <div className="box-wrappers">
-            <form className="forms" onSubmit={handleSubmit}>
-              {/* <label> Email: </label> */}
-              <input
-                name="email"
-                value={dataUser.email}
-                placeholder="Enter Your Email"
-                onBlur={handleChange}
-                onChange={handleChange}
-                // className={errors.email && "error"}
-              />
-               {/* {errors.email && (
-                      <div className="input-feedback">{errors.email}</div>
-                    )} */}
+      <div className="screen-wrapper row">
+        <div className="col-lg-8 col-md-7 col-xs-12 col col-img">
+          <div className="background-image img-fluid"></div>
+        </div>
+        <div className="col-lg-4 col-md-4 col-xs-12 col col-form">
+          <h1 className="hero-text">
+            Sign <br /> Up for Khanaval Food
+          </h1>
+          <div className="box-wrapper">
+            <form className="form">
+              <div className="form-group">
+                <input
+                  type="text"
+                  name="email"
+                  placeholder="Enter Your Email"
+                  value={dataUser.email}
+                  onBlur={handleChange}
+                  onChange={handleChange}
+                />
+                <div className="input-feedback"> {error["email"]} </div>
+              </div>
+              <div className="form-group">
+                <input
+                  name="phonenumber"
+                  placeholder="Enter Your Phone Number"
+                  value={dataUser.phonenumber}
+                  minLength="6"
+                  onBlur={handleChange}
+                  onChange={handleChange}
+                />
+                <div className="input-feedback"> {error["phonenumber"]} </div>
+              </div>
+              <div className="form-group">
+                <input
+                  name="password"
+                  type="password"
+                  placeholder="Enter Your Password"
+                  value={dataUser.password}
+                  maxLength="8"
+                  onBlur={handleChange}
+                  onChange={handleChange}
+                />
+                <div className="input-feedback"> {error["password"]} </div>
+              </div>
 
-              <span className="spans"> {error["email"]} </span> <br />
-              {/* <label> Phone Number: </label> */}
-              <input
-                name="phonenumber"
-                value={dataUser.phonenumber}
-                placeholder="Enter Your Phone Number"
-                onBlur={handleChange}
-                onChange={handleChange}
-              />
-              <span className="spans"> {error["phonenumber"]} </span> <br />
-              {/* <label> Password: </label> */}
-              <input
-                name="password"
-                value={dataUser.password}
-                placeholder="Enter Your Password"
-                maxLength={8}
-                onBlur={handleChange}
-                onChange={handleChange}
-              />
-              <span className="spans"> {error["password"]} </span> <br />
               <div className="form-group">
                 <button
-                  type="submit"  
-                  disabled={isSubmitting}               
-                  className="buttons btn-blues" >
+                  type="submit"
+                  onClick={handleSubmit}
+                  className="button btn-blue"
+                >
                   sign up
                 </button>
               </div>
-              {/* <div className="button-wrapper cta-signup">                  
-                  <a href="/success" className="button btn-border-blue">sign up</a>  
-                </div>  */}
-              <span className="form-input-login">
-                already have an account ? Login
-                <a href="/login"> here </a>
-              </span>
-              <p className="form-input-policies">
-              <b>
+            </form>
+
+            <span className="form-input-login">
+              already have an account ? Login
+              <a href="/login"> here </a>
+            </span>
+
+            <div className="disclaimer"></div>
+            <p>
               By creating an account, you agree to Khanaval's Term of Service,
               Privacy Policy and Content Policies
-              </b>
-          </p>
-            </form>
+            </p>
+
+            <div className="social-container">
+              <a href="/signup" className="facebook social">
+                <FontAwesomeIcon icon={faFacebook} />
+              </a>
+              <a href="/signup" className="twitter social">
+                <FontAwesomeIcon icon={faTwitter} />
+              </a>
+              <a href="/signup" className="instagram social">
+                <FontAwesomeIcon icon={faInstagram} />
+              </a>
+              <a href="/signup" className="youtube social">
+                <FontAwesomeIcon icon={faYoutube} />
+              </a>
+            </div>
           </div>
         </div>
       </div>
