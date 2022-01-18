@@ -1,15 +1,20 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import './mysass/SignUpCSS/signup2.css';
+// import './mysass/SignUpCSS/signup.css';
+import './mysass/App-media.css';
 import Footer from "./Components/Footer/indexfooter.js";
 import { GlobalStyle } from "./GlobalStyle.js";
-import TopHeader from "./Components/TopHeader/TopHeader";
+// import TopHeader from "./Components/TopHeader/TopHeader";
 import Home from "./Components/Home/Home";
 import Login from "./Components/Login/Login";
 import Products from "./Components/Products/indexP.js";
 import Feature from "./Components/Feature/indexF.js";
 import SignUp from "./Components/FormSignUp/signup.js";
+import UserDetails from "./Components/UserDetails/UserDetails.js";
+
+
+
 // import SignUp from "./Components/SignUp/SignUp.js";
 // import Hero from './Components/Hero/indexH.js';
 
@@ -18,7 +23,7 @@ function Apps() {
     <div className='App'>
     <Router>       
       <GlobalStyle/> 
-      <TopHeader />
+      {/* <TopHeader /> */}
        <Switch>
         {/* <Route path="/" exact component={HeroBanner} /> */}
          <Route path="/login" component={Login} />
@@ -28,14 +33,19 @@ function Apps() {
         {/* <Route path="/" exact component={HeroBanner} /> */}
         <Route path="/signup" component={SignUp} />
       </Switch>
-
-      <Route exact path="/">
+      
+      <Switch>
+        {/* <Route path="/" exact component={HeroBanner} /> */}
+        <Route path="/userdetail" component={UserDetails} />        
+      </Switch>
+           <Route exact path="/">
         <Home/>
         <Products heading='restaurant' />   
         <Feature />           
+        <Footer />
         {/* <Hero />*/}
       </Route>
-      <Footer />
+      
       
       
             

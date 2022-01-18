@@ -307,7 +307,7 @@ body {
       background: #ffb803;
     }
   }
-  /* .form-container {
+   .form-container {
     margin: 100px auto;
     width: 1000px;
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
@@ -316,7 +316,7 @@ body {
     height: 600px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-  } */
+  } 
   .container-form
   {
     width: 100%;
@@ -559,7 +559,7 @@ body {
 }
 
 /* SOCIAL STUFF */
-/* .footer-container {
+ .footer-container {
   padding-right: var(--bs-gutter-x, 0.75rem) !important;
   padding-left: var(--bs-gutter-x, 0.75rem) !important;
 }
@@ -567,7 +567,7 @@ body {
 .footer-container .footer-wrapper {
   margin: 0 auto;
   max-width: 100%;
-} */
+} 
 .social-container {
   padding: 25px 10px;
   text-align: center;
@@ -598,7 +598,7 @@ a.twitter {
 a.instagram {
   color: 000000;
 }
-/* .landing-form .socialmedia{
+.landing-form .socialmedia{
   max-width: 1300px;
  width: 100%;
 }
@@ -658,4 +658,4 @@ font-size: 24px;
 
 .footer-container .footer-social-media a svg {
   color: #fff;
-} */
+} 

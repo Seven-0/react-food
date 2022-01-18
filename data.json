@@ -7,15 +7,15 @@
       "password": "abcd"
     },
     {
-      "email": "sean@gmail.com",
-      "phonenumber": "0987654321",
-      "password": "sean123",
+      "email": "sevensimanjuntak@gmail.com",
+      "phonenumber": "0123456789",
+      "password": "Seven.07",
       "id": 2
     },
     {
-      "email": "simanjuntak@gmail.com",
-      "phonenumber": "123456",
-      "password": "1456789",
+      "email": "se@gmail.com",
+      "phonenumber": "02345677",
+      "password": "Dgdfgf9f",
       "id": 3
     },
     {
@@ -23,24 +23,6 @@
       "phonenumber": "",
       "password": "",
       "id": 4
-    },
-    {
-      "email": "",
-      "phonenumber": "",
-      "password": "",
-      "id": 5
-    },
-    {
-      "email": "",
-      "phonenumber": "",
-      "password": "",
-      "id": 6
-    },
-    {
-      "email": "",
-      "phonenumber": "",
-      "password": "",
-      "id": 7
     }
   ]
 }

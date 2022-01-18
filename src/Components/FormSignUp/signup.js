@@ -1,5 +1,10 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import React, { useState } from "react";
+import axiosIntrceptor from "../../util/interceptors";
+import CryptoAES from 'crypto-js/aes';
+import CryptoENC from 'crypto-js/enc-utf8';
+import "../../mysass/SignUpCSS/signup.css";
+
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faYoutube,
@@ -8,12 +13,24 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 
+const secretKey ="midasFoodDelivery";
+
 function SignUp() {
   const Data = {
     email: "",
-    phonenumber: "",
+    phoneNo: "",
     password: "",
   };
+
+  const encryption = () => {
+    // const password = passwordInputRef.current.value
+    const password = dataUser.password
+    let chipherEncryptedText = CryptoAES.encrypt(password,secretKey);
+    let chipherDecryptedText = CryptoAES.decrypt(chipherEncryptedText.toString(), secretKey);
+    
+    console.log("chipherEncryptedText : ", chipherEncryptedText.toString());
+    console.log("chipherDecryptedText : ", chipherDecryptedText.toString(CryptoENC));
+}
 
   const [dataUser, setDataUser] = useState(Data);
   const [error, setError] = useState({});
@@ -32,13 +49,13 @@ function SignUp() {
       console.log("Temporary Email :", fieldValue.email);    }
     // Validation Phone Number
     const phonenumberRegex = /([0])/;
-    if ("phonenumber" in fieldValue) {
-      temp.phonenumber =
-        fieldValue.phonenumber === ""
+    if ("phoneNo" in fieldValue) {
+      temp.phoneNo =
+        fieldValue.phoneNo === ""
           ? "Phone Number is required"
-          : "" || !phonenumberRegex.test(fieldValue.phonenumber)
+          : "" || !phonenumberRegex.test(fieldValue.phoneNo)
           ? "Invalid Phone Number "
-          : "" || fieldValue.phonenumber.length < 6
+          : "" || fieldValue.phoneNo.length < 6
           ? "Invalid Phone Number character length"
           : "";    }
     // Validation Password
@@ -76,7 +93,21 @@ function SignUp() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    validasi();
+    encryption();
+    validasi();   
+          axiosIntrceptor
+        .post(
+          "https://midas-food-delivery-users.herokuapp.com/v1/signup", 
+          dataUser
+        )
+        .then((response) => {
+          console.log("Respone:", response.data.payload);
+          setDataUser(response.data.payload[0]);
+        })
+        .catch((error) => {
+          console.log(error);
+        },[]);
+     
 
     // useEffect(data => {
     //   // POST request using axios inside useEffect React hook
@@ -108,7 +139,7 @@ function SignUp() {
         </div>
         <div className="col-lg-4 col-md-4 col-xs-12 col col-form">
           <h1 className="hero-text">
-            Sign <br /> Up for Khanaval Food
+            Sign Up <br /> for Khanaval Food
           </h1>
           <div className="box-wrapper">
             <form className="form">
@@ -125,14 +156,14 @@ function SignUp() {
               </div>
               <div className="form-group">
                 <input
-                  name="phonenumber"
+                  name="phoneNo"
                   placeholder="Enter Your Phone Number"
-                  value={dataUser.phonenumber}
+                  value={dataUser.phoneNo}
                   minLength="6"
                   onBlur={handleChange}
                   onChange={handleChange}
                 />
-                <div className="input-feedback"> {error["phonenumber"]} </div>
+                <div className="input-feedback"> {error["phoneNo"]} </div>
               </div>
               <div className="form-group">
                 <input
@@ -151,6 +182,7 @@ function SignUp() {
                 <button
                   type="submit"
                   onClick={handleSubmit}
+                  onBlur={handleChange}
                   className="button btn-blue"
                 >
                   sign up
