@@ -82,23 +82,14 @@ $dark-grey: #343a40;
         }
     }
     .landing-form{
+        padding: 50px 0 30px;
+        
         .input-feedback{
             font-size: 12px;
         }
-    }
-    .page-login{
-        .cta-forget-password{
-            .link{
-                font-size: 14px;
-            }
+        .box-wrapper{
+            max-width: 500px;
         }
-    }
-}
-
-@media only screen and (max-width : 576px){
-    .landing-form{
-        padding: 50px 0 30px;
-
         &.page-login{
             .screen-wrapper{
                 margin: 0 auto;
@@ -113,6 +104,21 @@ $dark-grey: #343a40;
             }
         }
     }
+    .page-login{
+        .cta-forget-password{
+            .link{
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width : 576px){
+    .landing-form{
+        .form{
+            margin: 15px auto;
+        }
+    }
 }
 
 @media only screen and (max-width : 320px){
@@ -120,6 +126,27 @@ $dark-grey: #343a40;
 }
 
 @media only screen and (min-width : 768px) and (max-width: 1024px){
-
+    
 }
 
+@media only screen and (max-height : 600px){
+    .landing-form{
+        .hero-text{
+            margin-bottom: 15px;
+        }
+        .form{
+            margin: 15px auto;
+        }
+    }
+    .page-login{
+        .button-wrapper{
+            margin-bottom: 15px;
+        }
+        .disclaimer{
+            margin-top: 15px;
+        }
+        .footer-social-media{
+            margin: 15px auto 0;
+        }
+    }
+}
