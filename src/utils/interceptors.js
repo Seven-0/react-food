@@ -4,8 +4,9 @@ const axiosIntrceptor = axios.create();
 
 axiosIntrceptor.interceptors.request.use( req => {
     req.headers = {
-        signature: "midasfooddelivery",
-        request_not_encrypted: true }
+            signature: "midasfooddelivery",
+            request_not_encrypted: true 
+        }
         return req 
     })
 

@@ -1,29 +1,28 @@
-import { SET_LOGIN_SUCCESS, SET_LOGIN_ERROR, SET_LOGIN_PAYLOAD  } from './actionTypes';
+import { SET_LOGIN_SUCCESS, SET_LOGIN_ERROR, SET_ISLOGIN  } from './actionTypes';
 
 const initialState = {
-    isLoggedIn: false,
-    // userId: '',
-    // token: '',
-    payload: [],
+    payload: '',
+    showError: false,
+    isLogin: false,
 }
 
-export function reducer (state = initialState, action){
+export function reducerLogin (state = initialState, action){
     switch (action.type) {
-    case 'SET_LOGIN_SUCCESS':
+    case SET_LOGIN_SUCCESS:
         return {
             ...state,
-            ...action.payload,
-            // isLoggedIn: true,
+            payload: action.payload,
+            showError: action.showError,
         };
-    case 'SET_LOGIN_ERROR':
+    case SET_LOGIN_ERROR:
         return {
             ...state,
-            ...action.payload,
+            showError: action.showError,
         };
-    case 'SET_LOGIN_PAYLOAD':
+    case SET_ISLOGIN:
         return {
             ...state,
-            ...action.payload,
+            isLogin: action.isLogin,
         };
     default:
         return state;

@@ -1,9 +1,11 @@
 import thunk from 'redux-thunk';
 import { createStore, combineReducers, applyMiddleware } from 'redux';
-import { reducer } from './reducer';
+import { reducerLogin } from '../store/reducer';
+import { reducerHomepageBanner } from '../store/reducerHomeBanner';
 
 const rootReducer = combineReducers({
-    reducer: reducer,
+    reducerLogin,
+    reducerHomepageBanner,
 });
 
 export const store = createStore(

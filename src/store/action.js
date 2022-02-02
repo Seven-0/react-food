@@ -1,44 +1,53 @@
-import { SET_LOGIN_SUCCESS, SET_LOGIN_ERROR , SET_LOGIN_PAYLOAD  } from './actionTypes';
+import { SET_LOGIN_SUCCESS, SET_LOGIN_ERROR, SET_ISLOGIN} from './actionTypes';
 import axiosIntrceptor from '../utils/interceptors';
 
 
 // function mengembalikan action (objek)
-export function setLoginSuccess(payload){
+export function setLoginSuccess(payload, showError){
   return{
     type : SET_LOGIN_SUCCESS,
-    payload : payload,
+    payload: payload,
+    showError: showError,
   };
 }
 
-export function setLoginError(payload){
+export function setLoginError(showError){
   return{
     type : SET_LOGIN_ERROR,
-    payload : payload,
+    showError: showError,
   };
 }
 
-export function setLoginPayload(payload){
-  return {
-    type: SET_LOGIN_PAYLOAD,
-    payload: payload,
+export function setIsLogin(isLogin){
+  return{
+    type : SET_ISLOGIN,
+    isLogin: isLogin,
   };
 }
-
 
 export function fetchLogin(payload){
   return (dispatch) => {
     axiosIntrceptor
     .post( "https://midas-food-delivery-users.herokuapp.com/v1/login", payload)
         .then((response) => {
-            dispatch(setLoginPayload(response.data.payload[0]));
-            // console.log("dispatch apa", dispatchApa);
+          // localStorage.setItem('token', response.data.payload[0].tokens.accessToken);
+          // localStorage.setItem('isLogin', true);
 
-            console.log("response", response.data);
-            console.log("isi payload", response.data.payload[0]);
-            console.log("isi accessToken", response.data.payload[0].tokens.accessToken);
+          if(response.data.success === true){
+            console.warn("Sukses")
+            dispatch(setLoginSuccess(response.data.payload[0]) ,  false);
+            dispatch(setIsLogin(true));
+          }
+          else{
+            console.warn("Gagal")
+          }
+          // window.location.pathname = '/home';
+          // console.log("response", response.data);
+          // console.log("isi payload", response.data.payload[0]);
+          // console.log("isi accessToken", response.data.payload[0].tokens.accessToken);
         })
         .catch((error) => {
-            console.log(error);
+          dispatch(setLoginError(true));
         })
   };
 }

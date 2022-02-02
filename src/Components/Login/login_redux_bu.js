@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
+import axiosIntrceptor from "../../utils/interceptors.js";
 
-import { fetchLogin } from "../../store/action.js";
+import { setLoginPayload, fetchLogin } from "../../store/action.js";
 import { useSelector, useDispatch } from "react-redux";
-import { useNavigate } from "react-router";
 
 import CryptoAES from 'crypto-js/aes';
 import CryptoENC from 'crypto-js/enc-utf8';
@@ -15,8 +15,7 @@ import {
 
 
 function Login(){
-  
-  const navigate = useNavigate();
+
   const dispatch = useDispatch();
   const payload  = useSelector((state) => state.reducerLogin);
 
@@ -32,15 +31,12 @@ function Login(){
 
   const encryptionPassword = () => {
     const password = dataUser.password
-    let chipherEncryptedText = CryptoAES.encrypt(password,secretKey).toString();
+    let chipherEncryptedText = CryptoAES.encrypt(password,secretKey);
     let chipherDecryptedText = CryptoAES.decrypt(chipherEncryptedText.toString(), secretKey);
 
     // console.log("chipherEncryptedText : ", chipherEncryptedText.toString());
     // console.log("chipherDecryptedText : ", chipherDecryptedText.toString(CryptoENC));
-    return chipherEncryptedText;
-  };
-
-  // console.log("encryptionnya", encryptionPassword())
+  }
 
   const validasi = (fieldValue = dataUser) => {
     let temp = {...error}
@@ -82,16 +78,22 @@ function Login(){
   const handleSubmit = (e) => {
     e.preventDefault();
     validasi();
-    // encryptionPassword();
-    // dataUser.password = encryptionPassword();
+    encryptionPassword();
+
     dispatch(fetchLogin(dataUser));
-    // navigate("/home")
   }
 
   useEffect(() => {
     console.log('data payload', payload);
   }, [payload]);
 
+  // if (payload.toString().lenght > 0){
+  //   return (
+  //     <div>
+  //       {console.log("isi payload ada gak", payload)}
+  //     </div>
+  //   )
+  // }
 
   return(
     <section className="section landing-page landing-form page-login">

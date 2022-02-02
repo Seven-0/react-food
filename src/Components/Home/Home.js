@@ -1,16 +1,22 @@
 import React, { useState, useEffect } from "react";
+import HomeBanner from "../HomeBanner/HomeBanner";
+import Footer from "../Footer/indexfooter";
 
-function Home(){
+const Home = () => {
+
     return (
-       <section className='section section-banner'>
-            <div className='container'>
-                <div className='text-wrapper'>
-                    <h1 className='hero-text'>khanaval <br /> delicious</h1>
-                    <p className='hero-text-desc'>home food</p>
-                </div>
-            </div>
-        </section>
+       <>
+       <HomeBanner></HomeBanner>
+       <section className='section landing-page'>
+        <div className='container'>
+          <div className='text-wrapper'>
+            <p>Welcome Home</p>
+          </div>
+        </div>
+      </section>
+      <Footer></Footer>
+      </>
     )
-}
+};
 
 export default Home;
